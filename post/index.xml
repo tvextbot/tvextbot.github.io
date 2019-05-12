@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on TVExtBot</title>
+    <link>https://tvextbot.github.io/post/</link>
+    <description>Recent content in Posts on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
+    <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
+    <lastBuildDate>Thu, 18 Apr 2019 22:29:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://tvextbot.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>전략 (RSI)</title>
+      <link>https://tvextbot.github.io/post/strategy_rsi/</link>
+      <pubDate>Thu, 18 Apr 2019 22:29:10 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/strategy_rsi/</guid>
+      <description>&lt;h3 id=&#34;rsi를-활용한-전략&#34;&gt;RSI를 활용한 전략&lt;/h3&gt;
+
+&lt;div id=&#34;alert&#34; class=&#34;alert alert-info&#34;&gt;
+    &lt;h6 class=&#34;alert-heading&#34;&gt;전략설명&lt;/h6&gt;
+    &lt;ul&gt;
+        &lt;li&gt;RSI가 30이하에서 RSI가 RSI의 이동평균선을 골든크로스할 경우 매수.&lt;/li&gt;
+        &lt;li&gt;RSI가 80보다 큰지점으로 부터 80미만이된 지점에서 익절.&lt;/li&gt;
+        &lt;li&gt;과거 10일간의 최저치를 깰 경우 손절.&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>파인스크립트 기초</title>
+      <link>https://tvextbot.github.io/post/basis/</link>
+      <pubDate>Thu, 14 Mar 2019 21:46:21 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/basis/</guid>
+      <description>&lt;p&gt;파인(Pine)스크립트란 트레이딩뷰 플랫폼상에서 실행가능한 스크립트이며 코딩하기 위해 Pine에디터를 제공하고 있습니다.&lt;br&gt;
+종류로는 지표와 전략 스크립트가 있으며 지표는 차트의 보조지수로 활용하고 전략은 백테스팅이 가능합니다.&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>문제해결</title>
+      <link>https://tvextbot.github.io/post/troubleshooting/</link>
+      <pubDate>Sun, 10 Mar 2019 13:20:09 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/troubleshooting/</guid>
+      <description>&lt;p&gt;TVExtBot 사용시 아래와 같은 에러가 발생할 수 있습니다.&lt;br&gt;
+문제 해결을 위해 참고해 주세요.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>전략 (볼린저밴드)</title>
+      <link>https://tvextbot.github.io/post/strategy_bb/</link>
+      <pubDate>Mon, 04 Mar 2019 16:43:06 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/strategy_bb/</guid>
+      <description>&lt;h3 id=&#34;볼린저밴드를-활용한-전략-작성중&#34;&gt;볼린저밴드를 활용한 전략 (작성중&amp;hellip;)&lt;/h3&gt;
+
+&lt;p&gt;볼린저밴드는 아래의 목적에서 사용하는경우가 많습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;단기적인 가격변동에 의한 현재가의 위치를 파악&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;시장의 반전을 판단&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>시작하기</title>
+      <link>https://tvextbot.github.io/post/first/</link>
+      <pubDate>Sat, 02 Mar 2019 10:19:39 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/first/</guid>
+      <description>&lt;p&gt;구글 크롬웹 스토어에서 TVExtBot를 자신의 크롬 브라우저에 추가한 후 아래의 설명을 참고하여 설정해 주세요.&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
