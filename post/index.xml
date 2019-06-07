@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Thu, 16 May 2019 23:14:26 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jun 2019 10:13:19 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>퀵주문 기능</title>
+      <link>https://tvextbot.github.io/post/quickorder/</link>
+      <pubDate>Fri, 07 Jun 2019 10:13:19 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/quickorder/</guid>
+      <description>&lt;p&gt;차트분석가 인기 유튜버 차그남님의 아이디어로 퀵주문 기능을 추가하였습니다. &lt;i class=&#34;fa fa-smile&#34;&gt;&lt;/i&gt; &lt;br&gt;
+퀵주문은 트레이딩뷰의 얼러트설정과 관계없이 한번의 클릭으로 해당 거래소에 주문매매를 실행하는 기능입니다. &lt;br&gt;
+그리고 퀵주문 리스트 등록기능을 사용하시면 거래량이 많고 호가창의 움직임이 많은 코인을 신속히 주문매매 할수 있습니다. &lt;br&gt;
+퀵주문 리스트는 최대 10개까지 등록 가능합니다.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>각종 지표들</title>
