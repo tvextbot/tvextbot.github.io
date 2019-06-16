@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Fri, 07 Jun 2019 10:13:19 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jun 2019 13:48:34 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>지정가 주문취소기능</title>
+      <link>https://tvextbot.github.io/post/orderlist/</link>
+      <pubDate>Sun, 16 Jun 2019 13:48:34 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/orderlist/</guid>
+      <description>&lt;p&gt;주문내역화면과 프로그램내에서 주문한 미체결된 지정가 거래를 취소하는 기능을 추가하였습니다.&lt;br /&gt;
+주문내역 리스트는 최대 100개까지 확인할 수 있습니다.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>퀵주문 기능</title>
