@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Sun, 16 Jun 2019 13:48:34 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Aug 2019 14:02:56 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>인증키 등록&amp;구매가이드</title>
+      <link>https://tvextbot.github.io/post/authguide/</link>
+      <pubDate>Sun, 25 Aug 2019 14:02:56 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/authguide/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-danger h5&#34;&gt;TVExtBot가 9월1일부터 유료버젼으로 전환됩니다.&lt;br&gt;
+바이낸스는 계속해서 무료로 사용가능하지만 그외 빗썸, 코인원, 업비트는 인증키를 등록하셔야지만 사용가능합니다.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>지정가 주문취소기능</title>
