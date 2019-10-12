@@ -18,8 +18,9 @@
       <pubDate>Sun, 25 Aug 2019 14:02:56 +0900</pubDate>
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/authguide/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;text-danger h5&#34;&gt;TVExtBot가 9월1일부터 유료버젼으로 전환됩니다.&lt;br&gt;
-바이낸스는 계속해서 무료로 사용가능하지만 그외 빗썸, 코인원, 업비트는 인증키를 등록하셔야지만 사용가능합니다.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;span class=&#34;text-info&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34;&gt;&lt;/i&gt; 빗썸, 코인원, 업비트, 바이비트, 비트멕스를 사용하기 위해서는 인증키등록 화면에서 인증키를 등록하여 주세요.&lt;/span&gt;&lt;br&gt;
+&lt;span class=&#34;text-info&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34;&gt;&lt;/i&gt; 인증키를 등록하지 않아도 바이낸스, 바이비트 테스트넷, 비트멕스 테스트넷는 무료로 사용가능 합니다.&lt;/span&gt;&lt;br&gt;
+&lt;span class=&#34;text-info&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34;&gt;&lt;/i&gt; 바이비트, 비트멕스 베타기간내에는 테스트넷으로 사용법을 충분히 숙지하신 후 소액으로 메인넷을 사용하시길 추천드립니다.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
