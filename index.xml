@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Sun, 25 Aug 2019 14:02:56 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 03 Nov 2019 21:57:11 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title> 하나의 거래소에 2개이상의 계정추가기능(v.0.8.4버젼)</title>
+      <link>https://tvextbot.github.io/post/addaccount/</link>
+      <pubDate>Sun, 03 Nov 2019 21:57:11 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/addaccount/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-info&#34;&gt;하나의 거래소에 2개이상의 계정을 사용하실 경우 API키등록화면의 계정추가기능을 사용하여 거래소에 최대 3개까지 API키 등록이 가능하게 되었습니다.&lt;/span&gt;&lt;br&gt;
+&lt;h5&gt;&lt;span class=&#34;text-danger&#34;&gt;※ 계정추가기능으로 주문메시지에 계정(account)이 추가되었으나 이미 자동매매를 실행하시는 경우에는 영향을 미치지 않으니 걱정하지 않으셔도 됩니다.&lt;/span&gt;&lt;/h5&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>인증키 등록&amp;구매가이드</title>
