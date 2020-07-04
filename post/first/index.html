@@ -59,7 +59,7 @@
   "headline": "시작하기",
   "description" : "구글 크롬웹 스토어에서 TVExtBot를 자신의 크롬 브라우저에 추가한 후 아래의 설명을 참고하여 설정해 주세요.\n",
   "inLanguage" : "ko",
-  "wordCount":  609 ,
+  "wordCount":  764 ,
   "datePublished" : "2019-03-02T10:19:39",
   "dateModified" : "2019-03-02T10:19:39",
   "image" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
@@ -284,7 +284,7 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;March 2, 2019에 게시됨
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;분
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;분
   
   
   
@@ -320,12 +320,13 @@ if (!doNotTrack) {
     가입에 대한 자세한 내용은 트레이딩뷰 사이트의 사용안내를 확인하여 주세요.<br><br>
     ※TVExtBot는 아래주소의 한글 트래이딩뷰 사이트만 동작하도록 설계되었습니다.<br>
     &nbsp;&nbsp;&nbsp;&nbsp;반드시 트래이딩뷰 사이트의 언어설정에서 한글을 선택해 주세요.<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;<a class="text-muted" href="https://kr.tradingview.com" target="_blank">https://kr.tradingview.com</a>
+    &nbsp;&nbsp;&nbsp;&nbsp;<a class="text-muted" href="https://kr.tradingview.com" target="_blank">https://kr.tradingview.com</a><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="font-weight-bold">단, 프리미엄버전은 한글이외에도 동작합니다.</span>
 <hr>
 <h6 class="alert-heading"><i class="fa fa-comment"></i> 유의사항</h6>
     <ul>
         <li>주문메시지에 오류가 있을시에는 자동매매가 이루어지지 않으니 반드시 설정화면의 메시지작성을 통해 작성해 주세요.</li>
-        <li>컴퓨터를 종료하거나 브라우저를 닫으면 자동거래를 실행 할 수 없으니 유의하시길 바랍니다.</li>
+        <li><span class="text-primary">FREE</span>와 <span class="text-success">PRO</span>버전은 컴퓨터를 종료하거나 브라우저를 닫으면 자동거래를 실행 할 수 없으니 유의하시길 바랍니다.</li>
         <li>트레이딩뷰 사이트의 유지보수나 거래소API장애로 자동매매가 이루어지지 않을수도 있는점 유의하여 주시길 바랍니다 .</li>
         <li>TVExtBot를 사용시 발생할 수 있는 서비스 장애 또는 발생하는 피해에 대하여는 일체 책임을 지지 않습니다.</li>
         <li>위의 내용에 대해서 동의하는 경우에만 TVExtBot를 사용해 주시길 바랍니다.</li>
@@ -404,9 +405,9 @@ if (!doNotTrack) {
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/link_option1.png"  itemprop="contentUrl"> 
+    <a href="/img/link_option01.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/link_option1.png"
+            src="/img/link_option01.png"
             
             />
     </a>
@@ -417,9 +418,9 @@ if (!doNotTrack) {
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/main_options1.png"  itemprop="contentUrl"> 
+    <a href="/img/main_options01.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/main_options1.png"
+            src="/img/main_options01.png"
             
             />
     </a>
@@ -436,15 +437,17 @@ if (!doNotTrack) {
         <li>바이비트 테스트넷(마진거래 가능)</li>
         <li>비트멕스(마진거래 가능)</li>
         <li>비트멕스 테스트넷(마진거래 가능)</li>
+        <li>바이낸스선물(마진거래 가능)</li>
+        <li>바이낸스선물 테스트넷(마진거래 가능)</li>
     </ul>
 </div>
-<h5><span class="text-danger">※ 현재 바이비트API의 변경으로 인해 사용하시던 API키가 사용이 안되는 문제가 발생하고 있습니다.<br>API키 연결테스트를 해보시고 안되면 아래를 참고하여 새로운키를 생성해 주세요.</span></h5>
+<h5><span class="text-danger">※ TVExtBot 2.0 부터 고정IP를 사용가능하게 되었습니다. 바이빗의 경우 아래의 내용을 참고해 주세요.(다른거래소도 동일합니다)</span></h5>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/createApi.png"  itemprop="contentUrl"> 
+    <a href="/img/create_api.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/createApi-small.png"
+            src="/img/create_api-small.png"
             
             />
     </a>
@@ -463,27 +466,28 @@ if (!doNotTrack) {
   </iframe>
 </div>
 <br>
-<p>8.API키 등록화면에서 [편집]버튼을 클릭 후 거래소의 API키와 비밀키를 입력하여 [저장]버튼을 클릭해 주세요.
+<p>8.API키 등록화면에서 [편집]버튼을 클릭 후 거래소의 API키와 비밀키를 입력하여 [저장]버튼을 클릭해 주세요.</p>
+<h5 class="text-danger"><i class="fas fa-hand-point-right"></i> TVExtBot서버 고정IP주소는 34.69.69.155 입니다.</h5>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/api_key1.png"  itemprop="contentUrl"> 
+    <a href="/img/api_key01.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/api_key1.png"
+            src="/img/api_key01.png"
             
             />
     </a>
     
 </figure>
-<span class="text-danger">(※ 유료거래소가 락을 해제하기 위해 인증키를 구입하세요.[<a class="text-muted" href="./authguide" target="_blank"><i class="fa fa-cog"></i> 인증키 등록&amp;구매가이드</a>])</span><br><br></p>
+<span class="text-danger">(※ 유료거래소가 락을 해제하기 위해 인증키를 구입하세요.[<a class="text-muted" href="./authguide" target="_blank"><i class="fa fa-cog"></i> 인증키 등록&구매가이드</a>])</span><br><br>
 <p>9.거래소 연결에 성공하면 아래와 같은 연결성공 메시지와 함께 [연결중]버튼으로 바뀌는 것을 확인할 수 있습니다.<br>
 <span class="text-danger">(※ [연결중]으로 안 바뀌는 경우 API키가 제대로 입력되었는지 확인해주세요. )</span>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/success_apikey1.png"  itemprop="contentUrl"> 
+    <a href="/img/success_apikey01.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/success_apikey1.png"
+            src="/img/success_apikey01.png"
             
             />
     </a>
@@ -495,22 +499,22 @@ if (!doNotTrack) {
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/popup1.png"  itemprop="contentUrl"> 
+    <a href="/img/tv_popup.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/popup1.png"
+            src="/img/tv_popup.png"
             
             />
     </a>
     
 </figure>
 <br></p>
-<p>11.해당 거래소의 거래를 일시 중지하고 싶을때는 [연결중]버튼을 클릭하면 [연결중지]버튼으로 바뀌는것을 확인할 수 있습니다.
+<p>11.해당 거래소의 거래를 일시 중지하고 싶을때는 [연결중]버튼을 클릭하면 [차단]버튼으로 바뀌는것을 확인할 수 있습니다.
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/stop_apikey1.png"  itemprop="contentUrl"> 
+    <a href="/img/stop_apikey.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/stop_apikey1.png"
+            src="/img/stop_apikey.png"
             
             />
     </a>
@@ -520,9 +524,9 @@ if (!doNotTrack) {
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/popup_stop.png"  itemprop="contentUrl"> 
+    <a href="/img/tv_popup_stop.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/popup_stop.png"
+            src="/img/tv_popup_stop.png"
             
             />
     </a>
@@ -531,142 +535,212 @@ if (!doNotTrack) {
 <br></p>
 <h3 id="주문메시지-작성">주문메시지 작성</h3>
 <br>
-12.메시지 작성화면에서 트레이딩뷰의 얼러트에 설정할 주문 메시지를 작성합니다.<br>
+<h5 class="text-info"><i class="fas fa-hand-point-right"></i> 공개지표인 슈퍼트랜드지표를 이용하여 롱시그널 발생시 청산→매수, 숏시그널 발생시 청산→매도를 예로 설명하겠습니다.</h5>
+<h5 class="text-danger"><i class="fas fa-hand-point-right"></i> 트레이딩뷰의 얼러트 메시지란에 추가할수 있는 주문메시지는 최대 10개까지 입력가능합니다.</h5>
+<br>
+12.메시지 작성화면에서 트레이딩뷰의 얼러트에 설정할 주문 메시지를 매수, 매도, 청산순으로 작성합니다.<br>
 <h5><span class="text-danger">※ 주문 메시지는 반드시 메시지 작성화면을 통해 작성하여 주세요!</span><span class="text-danger"></span></h5>
 <div id="alert" class="alert alert-info">
 <h6 class="alert-heading">예) 아래의 내용을 입력 (매수용 주문 메시지)</h6>
 <ul>
-    <li>거래소 : Upbit</li>
-    <li>거래코인 : BTC/KRW</li>
-    <li>거래마켓 : KRW</li>
+    <li>거래소 : Bybit</li>
+    <li>거래코인 : BTC/USD</li>
+    <li>거래마켓 : USD</li>
     <li>거래방법 : 매수</li>
     <li>주문유형 : 지정가</li>
     <li>주문가격 : LAST (마지막 체결가격)</li>
     <li>주문가격대비 퍼센트(%) : 입력 안함 &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">※ 입력을 안할 경우 마지막 체결가로 매수 주문</span></li>
-    <li>주문수량(개수) : 1</li>
+    <li>주문수량(%) : 잔액대비 30 입력</li>
 </ul>
 </div>
-<h6>입력화면</h6>
+<h6>매수주문 입력화면</h6>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/buy_message1.png"  itemprop="contentUrl"> 
+    <a href="/img/buy_message.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/buy_message1.png"
+            src="/img/buy_message.png"
             
             />
     </a>
     
 </figure>
-<h6>출력결과</h6>
+<h6>매수메시지 출력결과</h6>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;upbit&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/KRW&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;buy&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;limit&#34;</span><span class="p">,</span><span class="s2">&#34;amount&#34;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;price&#34;</span><span class="o">:</span><span class="s2">&#34;last&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;limit&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;buy&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">30</span><span class="p">,</span><span class="s2">&#34;price&#34;</span><span class="o">:</span><span class="s2">&#34;last&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
 </code></pre></td></tr></table>
 </div>
 </div>
 <div id="alert" class="alert alert-info">
 <h6 class="alert-heading">예) 아래의 내용을 입력 (매도용 주문 메시지)</h6>
 <ul>
-    <li>거래소 : Upbit</li>
-    <li>거래코인 : BTC/KRW</li>
-    <li>거래마켓 : KRW</li>
+    <li>거래소 : Bybit</li>
+    <li>거래코인 : BTC/USD</li>
+    <li>거래마켓 : USD</li>
     <li>거래방법 : 매도</li>
     <li>주문유형 : 지정가</li>
     <li>주문가격 : LAST (마지막 체결가격)</li>
     <li>주문가격대비 퍼센트(%) : 입력 안함 &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">※ 입력을 안할 경우 마지막 체결가로 매도 주문</span></li>
-    <li>주문수량(개수) : 1</li>
+    <li>주문수량(%) : 잔액대비 30 입력</li>
 </ul>
 </div>
-<h6>입력화면</h6>
+<h6>매도주문 입력화면</h6>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/sell_message1.png"  itemprop="contentUrl"> 
+    <a href="/img/sell_order_message.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/sell_message1.png"
+            src="/img/sell_order_message.png"
             
             />
     </a>
     
 </figure>
-<h6>출력결과</h6>
+<h6>매도메시지 출력결과</h6>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;upbit&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/KRW&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;sell&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;limit&#34;</span><span class="p">,</span><span class="s2">&#34;amount&#34;</span><span class="o">:</span><span class="mi">1</span><span class="p">,</span><span class="s2">&#34;price&#34;</span><span class="o">:</span><span class="s2">&#34;last&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;limit&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;sell&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">30</span><span class="p">,</span><span class="s2">&#34;price&#34;</span><span class="o">:</span><span class="s2">&#34;last&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<div id="alert" class="alert alert-info">
+<h6 class="alert-heading">예) 아래의 내용을 입력 (청산용 주문 메시지)</h6>
+<ul>
+    <li>거래소 : Bybit</li>
+    <li>거래코인 : BTC/USD</li>
+    <li>거래마켓 : USD</li>
+    <li>거래방법 : 청산</li>
+    <li>주문유형 : 시장가</li>
+    <li>주문수량(%) : 미입력시에는 100%입니다.(분할청산시는 청산할 수량%을 입력하세요)</li>
+</ul>
+</div>
+<h6>청산주문 입력화면</h6>
+
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/close_message.png"  itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/close_message.png"
+            
+            />
+    </a>
+    
+</figure>
+<h6>청산메시지 출력결과</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;close&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
 </code></pre></td></tr></table>
 </div>
 </div>
 <h3 id="트레이딩-뷰에-얼러트-추가">트레이딩 뷰에 얼러트 추가</h3>
-<p>13.BTC원화 차트를 선택합니다.(※업비트 차트가 없기때문에 빗썸 차트를 선택)<br>
+<p>13.Bybit의 BTCUSD 차트를 선택하여 슈퍼트랜드지표를 불러옵니다.<br>
+<span class="text-info">(※ 필요하시면 얼러트를 추가한 슈퍼트랜드지표를 공유해 드리겠습니다. )</span>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/btc_chart.png"  itemprop="contentUrl"> 
+    <a href="/img/bybit_chart.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/btc_chart.png"
+            src="/img/bybit_chart.png"
             
             />
     </a>
     
 </figure></p>
-<p>14.1시간봉 기준으로 RSI를 활용하여 과매수(80) 보다 크면 매도 과매도(20) 보다 작으면 매수하는 간단한 전략을 설정하였습니다.
+<p>14.1시간봉 기준으로 아래의 long시그널 발생시 청산→매수 short시그널 발생시 청산→매도를 설정하겠습니다.
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/price_chart.png"  itemprop="contentUrl"> 
+    <a href="/img/supertrend.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/price_chart.png"
+            src="/img/supertrend.png"
             
             />
     </a>
     
 </figure></p>
-<p>15.얼러트추가[+]버튼을 클릭하여 과매수(80)에서 매도 과매도(20)하도록 얼러트를 추가합니다.<br></p>
-<h5><span class="text-info">매도용 얼러트를 추가</span></h5>
-
-
-<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/sell_alertmsg.png"  itemprop="contentUrl"> 
-        <img itemprop="thumbnail"
-            src="/img/sell_alertmsg-small.png"
-            
-            />
-    </a>
-    
-</figure>
+<p>15.얼러트추가[+]버튼을 클릭하여 조건에 SuperTrend와 Buy를 옵션에서 [봉닫힐때 한번]을 선택한후 메시지란에 청산과 매수 메시지를 복사&amp;붙여쓰기를 합니다.<br></p>
 <h5><span class="text-info">매수용 얼러트를 추가</span></h5>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/buy_alertmsg.png"  itemprop="contentUrl"> 
+    <a href="/img/buy_alertmsg1.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/buy_alertmsg-small.png"
+            src="/img/buy_alertmsg1-small.png"
             
             />
     </a>
     
 </figure>
-<p>16.아래와 같이 얼러트가 추가된것을 확인할 수 있습니다.
+<h6>매수용 얼러트 메시지란 설정내용</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;close&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+<span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;limit&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;buy&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">30</span><span class="p">,</span><span class="s2">&#34;price&#34;</span><span class="o">:</span><span class="s2">&#34;last&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<br>
+16.얼러트추가[+]버튼을 클릭하여 조건에 SuperTrend와 Sell를 옵션에서 [봉닫힐때 한번]을 선택한후 메시지란에 청산과 매도 메시지를 복사&붙여쓰기를 합니다.<br>
+<h5><span class="text-info">매도용 얼러트를 추가</span></h5>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/completed_alert.png"  itemprop="contentUrl"> 
+    <a href="/img/sell_alertmsg1.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/completed_alert.png"
+            src="/img/sell_alertmsg1-small.png"
+            
+            />
+    </a>
+    
+</figure>
+<h6>매도용 얼러트 메시지란 설정내용</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;close&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+<span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;limit&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;buy&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">30</span><span class="p">,</span><span class="s2">&#34;price&#34;</span><span class="o">:</span><span class="s2">&#34;last&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<p>17.아래와 같이 얼러트가 추가된것을 확인할 수 있습니다.
+
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/completed_alert1.png"  itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/completed_alert1.png"
             
             />
     </a>
     
 </figure></p>
-<p>17.설정은 여기까지 입니다. 다음은 TVExtBot가 설정한 주문메시지를 통해 자동매매를 실행합니다.<br></p>
-<h5><span class="text-danger">※ 위의 예시를 실제 매매에는 사용하지 마세요!</span></h5>
+<p>18.설정은 여기까지 입니다. 다음은 TVExtBot가 설정한 주문메시지를 통해 자동매매를 실행합니다.<br></p>
+<h5>
+    <span class="text-primary">※ 위의 설정은 얼러트에 의한 자동매매 설정방법 입니다.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;TVExtBot 2.0에는 <span class="text-danger">얼러트에의한 매매와 웹훅URL에 의한 매매 두종류</span>가 입니다.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">얼러트에 의한 자동매매</span>는 브라우저 종료하거나 컴퓨터를 꺼면 자동매매가 안됩니다.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-danger">웹훅에 의한 자동매매</span>는 브라우저 종료하거나 컴퓨터를 꺼도 자동매매가 가능합니다.
+    <br>&nbsp;&nbsp;&nbsp;&nbsp;웹훅에 의한 자동매매는 <span class="text-info">프리미엄버전에서만 사용가능</span>합니다.</span>
+</h5>
+<h5><span class="text-danger"><i class="fas fa-hand-point-right"></i> 웹훅에의한 자동매매 설정가이드는 여기를 참고하세요. [<a class="text-muted" href="./webhook" target="_blank"><i class="fa fa-cog"></i> 웹훅URL에의한 자동매매</a>]</span></h5>
 <br>
 <div id="alert" class="alert alert-success">
 높은 승률로 자동매매를 하기위해서는 보다 더 정교한 알고리즘으로 자신만의 전략을 개발하기를 추천합니다.<br>
