@@ -71,7 +71,7 @@ TVExtBot 유료사용자중에서 사용을 원하시는분이나 함께 개발�
       <pubDate>Sun, 03 Nov 2019 21:57:11 +0900</pubDate>
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/addaccount/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;text-info&#34;&gt;하나의 거래소에 2개이상의 계정을 사용하실 경우 API키등록화면의 계정추가기능을 사용하여 거래소에 최대 3개까지 API키 등록이 가능하게 되었습니다.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;text-info&#34;&gt;하나의 거래소에 2개이상의 계정을 사용하실 경우 API키등록화면의 계정추가기능을 사용하여 거래소에 최대 10개까지 API키 등록이 가능하게 되었습니다.&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h5&gt;&lt;span class=&#34;text-danger&#34;&gt;※ 계정추가기능으로 주문메시지에 계정(account)이 추가되었으나 이미 자동매매를 실행하시는 경우에는 영향을 미치지 않으니 걱정하지 않으셔도 됩니다.&lt;/span&gt;&lt;/h5&gt;</description>
     </item>
     
@@ -102,10 +102,9 @@ TVExtBot 유료사용자중에서 사용을 원하시는분이나 함께 개발�
       <pubDate>Fri, 07 Jun 2019 10:13:19 +0900</pubDate>
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/quickorder/</guid>
-      <description>&lt;p&gt;차트분석가로 인기있는 유튜버님의 아이디어로 퀵주문 기능을 추가하였습니다. &lt;i class=&#34;fa fa-smile&#34;&gt;&lt;/i&gt; &lt;br&gt;
-퀵주문은 트레이딩뷰의 얼러트설정과 관계없이 한번의 클릭으로 해당 거래소에 주문매매를 실행하는 기능입니다. &lt;br&gt;
+      <description>&lt;p&gt;퀵주문은 트레이딩뷰의 얼러트설정과 관계없이 한번의 클릭으로 해당 거래소에 주문매매를 실행하는 기능입니다. &lt;br&gt;
 그리고 퀵주문 리스트 등록기능을 사용하시면 거래량이 많고 호가창의 움직임이 많은 코인을 신속히 주문매매 할수 있습니다. &lt;br&gt;
-퀵주문 리스트는 최대 10개까지 등록 가능합니다.&lt;/p&gt;</description>
+여러개의 주문을 한번에 실행할수 있으며 퀵주문 리스트는 최대 10개까지 등록 가능합니다.&lt;/p&gt;</description>
     </item>
     
     <item>
