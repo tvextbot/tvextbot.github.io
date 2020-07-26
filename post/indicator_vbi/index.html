@@ -60,7 +60,7 @@
   "headline": "변동성돌파지표(프리미엄사용자무료)",
   "description" : "변동성 돌파 지표를 프리미엄 사용자에 한해서 무료로 배포합니다.\n변동성 돌파 지표란 전설적인 트레이더 래리 윌리엄스(Larry R. Williams)의 변동성 돌파 전략을 기본으로 개발한 지표입니다.\n",
   "inLanguage" : "ko",
-  "wordCount":  316 ,
+  "wordCount":  365 ,
   "datePublished" : "2020-07-12T16:04:56",
   "dateModified" : "2020-07-12T16:04:56",
   "image" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
@@ -367,7 +367,20 @@ if (!doNotTrack) {
             />
     </a>
     
-</figure></p>
+</figure>
+<br></p>
+<h4 id="년도별-수익">년도별 수익</h4>
+
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/bybit_vbs_backtest_year_result.png"  itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/bybit_vbs_backtest_year_result.png"
+            
+            />
+    </a>
+    
+</figure>
 <h4 id="2020년-월별-수익">2020년 월별 수익</h4>
 
 
@@ -381,7 +394,7 @@ if (!doNotTrack) {
     
 </figure>
 <h3 id="얼러트설정">얼러트설정</h3>
-<p>1.먼저 사용하실 거래소와 일봉을 선택한후 변동성 돌파 지표를 불러옵니다.<span class="text-danger">(※ 예는 바이빗 일봉차트입니다.)</span>
+<p>1.먼저 사용하실 거래소와 일봉을 선택한후 변동성 돌파 지표(VBI)를 불러옵니다.<span class="text-danger">(※ 예는 바이빗 일봉차트입니다.)</span>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -406,13 +419,13 @@ if (!doNotTrack) {
     
 </figure></p>
 <h4 id="-매수-얼러트">① 매수 얼러트</h4>
-<p>아래와 같이 시장가(또는 지정가) 주문메시지를 매수 얼러트에 설정합니다. <br><span class="text-danger">(※ 주문수량과 레버리지는 본인의 자산비율에 맞게 수정하여 사용하세요.)</span>
+<p>아래와 같이 시장가(또는 지정가) 주문메시지를 매수 얼러트에 설정합니다. <br><span class="text-danger">(※ 주문수량과 레버리지, 손절가는 본인의 상황에 맞게 수정하여 사용하세요.)</span>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-    <a href="/img/vbi_buy_edit_alert.png"  itemprop="contentUrl"> 
+    <a href="/img/vbi_buy_edit_alert1.png"  itemprop="contentUrl"> 
         <img itemprop="thumbnail"
-            src="/img/vbi_buy_edit_alert-small.png"
+            src="/img/vbi_buy_edit_alert1-small.png"
             
             />
     </a>
@@ -424,9 +437,22 @@ if (!doNotTrack) {
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;buy&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">70</span><span class="p">,</span><span class="s2">&#34;leverage&#34;</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;token&#34;</span><span class="o">:</span><span class="s2">&#34;본인의 인증키&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;buy&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">70</span><span class="p">,</span><span class="s2">&#34;sl_pct&#34;</span><span class="o">:-</span><span class="mi">10</span><span class="p">,</span><span class="s2">&#34;leverage&#34;</span><span class="o">:</span><span class="mi">2</span><span class="p">,</span><span class="s2">&#34;token&#34;</span><span class="o">:</span><span class="s2">&#34;본인의 인증키&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
 </code></pre></td></tr></table>
 </div>
+</div>
+<br>
+<div id="alert" class="alert alert-info">
+<h6 class="alert-heading">예) 매수 주문 메시지 내용</h6>
+<ul>
+    <li>거래소 : Bybit</li>
+    <li>계정 : 기본계정(*)</li>
+    <li>거래코인 : BTC/USD</li>
+    <li>거래방법 : 매수</li>
+    <li>주문유형 : 시장가</li>
+    <li>주문수량 : 70%(잔액대비)</li>
+    <li>손절가(%) : -10%</li>
+</ul>
 </div>
 <h4 id="-청산-얼러트">② 청산 얼러트</h4>
 <p>아래와 같이 시장가 청산(포지션종료) 주문메시지를 청산 얼러트에 설정합니다.
@@ -450,6 +476,17 @@ if (!doNotTrack) {
 <pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;close&#34;</span><span class="p">,</span><span class="s2">&#34;token&#34;</span><span class="o">:</span><span class="s2">&#34;본인의 인증키&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
 </code></pre></td></tr></table>
 </div>
+</div>
+<br>
+<div id="alert" class="alert alert-info">
+<h6 class="alert-heading">예) 매수 주문 메시지 내용</h6>
+<ul>
+    <li>거래소 : Bybit</li>
+    <li>계정 : 기본계정(*)</li>
+    <li>거래코인 : BTC/USD</li>
+    <li>거래방법 : 청산</li>
+    <li>주문유형 : 시장가</li>
+</ul>
 </div>
 <p><br><br>
 ※ 변동성 돌파 전략에 대한 상세한 내용은 아래의 링크를 참조해 주세요. <span class="badge badge-default text-secondary">출처 : 헤이비트</span><br>
