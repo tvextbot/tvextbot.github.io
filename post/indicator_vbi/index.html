@@ -60,7 +60,7 @@
   "headline": "변동성돌파지표(프리미엄사용자무료)",
   "description" : "변동성 돌파 지표를 프리미엄 사용자에 한해서 무료로 배포합니다.\n변동성 돌파 지표란 전설적인 트레이더 래리 윌리엄스(Larry R. Williams)의 변동성 돌파 전략을 기본으로 개발한 지표입니다.\n",
   "inLanguage" : "ko",
-  "wordCount":  408 ,
+  "wordCount":  494 ,
   "datePublished" : "2020-07-12T16:04:56",
   "dateModified" : "2020-07-12T16:04:56",
   "image" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
@@ -291,7 +291,7 @@ if (!doNotTrack) {
   <i class="fas fa-calendar"></i>&nbsp;July 12, 2020에 게시됨
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;분
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;3&nbsp;분
   
   
   
@@ -328,6 +328,11 @@ if (!doNotTrack) {
 <div id="alert" class="alert alert-danger">
     <h5 class="alert-heading"><i class="fa fa-comment"></i> 유의사항</h5>
     지표 사용에 의해서 발생한 매매손실에 대해서는 일체 책임을 지지 않으니 유의하여 주시면 감사하겠습니다.
+</div>
+<div id="alert" class="alert alert-success">
+    <h5 class="alert-heading"><i class="fas fa-plus-square"></i> 업데이트 정보</h5>
+    <i class="far fa-hand-point-right"></i> 전날 시가 종가 변동성(%) 기능을 추가하여 순익은 증가하고 최대 손실폭은 줄어들어 보다 수익은 극대화되고 보다 더 안정적인 매매가 가능하게 되었습니다.
+    <br><span class="badge badge-success">※ 자세한 설정에 대해서는 아래의 내용을 참고해 주세요.</span>
 </div>
 <p>변동성 돌파 전략은 일일 단위로 일정 수준 이상의 범위를 뛰어넘는 강한 상승세를 돌파 신호로 상승하는 추세를 따라가며 일 단위로 빠르게 수익을 실현하는 <span class="text-danger h5"><strong>단기매매 전략</strong></span>입니다.<br><br>
 변동성 돌파 전략은 다음과 같은 간단한 규칙으로 작동합니다.<br><br>
@@ -367,7 +372,8 @@ if (!doNotTrack) {
             />
     </a>
     
-</figure></p>
+</figure>
+<br></p>
 <!-- <br>
 #### 년도별 수익
 
@@ -381,8 +387,8 @@ if (!doNotTrack) {
     </a>
     
 </figure> -->
-<h4 id="2020년-월별-수익">2020년 월별 수익</h4>
-
+<h4 id="2020년-월별-수익--전날-시가종가-변동성-미적용">2020년 월별 수익 (※ 전날 시가종가 변동성 미적용)</h4>
+<p>
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
     <a href="/img/bybit_vbs_backtest_result.png"  itemprop="contentUrl"> 
@@ -393,6 +399,23 @@ if (!doNotTrack) {
     </a>
     
 </figure>
+<br></p>
+<h4 id="전날-시가종가-변동성-설정">전날 시가종가 변동성(%) 설정</h4>
+<p>아래와 같이 전날 시가종가 변동성(%)을 5퍼센트 입력합니다.<br>
+<span class="text-danger font-weight-bold">백테스트 결과 순익은 증가하고 최대 손실폭이 줄어든걸 확인할 수 있을껍니다.</span><br>
+다른값을 입력하여 본인의 적정값을 찾아 보세요.
+
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/vbs_input.png"  itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/vbs_input.png"
+            
+            />
+    </a>
+    
+</figure>
+<br></p>
 <h3 id="얼러트설정">얼러트설정</h3>
 <div id="alert" class="alert alert-danger">
     <h4 class="alert-heading"><i class="fa fa-comment"></i> 주의사항</h4>
@@ -438,7 +461,21 @@ if (!doNotTrack) {
     </a>
     
 </figure></p>
-<p>2.1에서 불러온 변동성 돌파 지표에서 초록색라인 돌파시 매수 다음날 시가에 청산하기 위한 얼러트를 추가합니다.
+<p>2.설정버튼을 클릭하여 전날 시가종가 변동성(%)를 입력합니다.<br>
+<span class="text-danger">(※ 사용을 원하지 않으실 경우 미입력 상태로 두시거나 0을 입력하시면 됩니다)</span>
+
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/vbi_input.png"  itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/vbi_input.png"
+            
+            />
+    </a>
+    
+</figure></p>
+<h5><span class="text-primary">※ 다른값을 입력하여 본인의 적정값을 찾아 보세요.</span></h5>
+<p>3.1에서 불러온 변동성 돌파 지표에서 초록색라인 돌파시 매수 다음날 시가에 청산하기 위한 얼러트를 추가합니다.
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -449,7 +486,8 @@ if (!doNotTrack) {
             />
     </a>
     
-</figure></p>
+</figure>
+<br></p>
 <h4 id="-매수-얼러트">① 매수 얼러트</h4>
 <p>아래와 같이 시장가(또는 지정가) 주문메시지를 매수 얼러트에 설정합니다. <br><span class="text-danger">(※ 주문수량과 레버리지, 목표가, 손절가는 본인의 상황에 맞게 수정하여 사용하세요.)</span>
 
