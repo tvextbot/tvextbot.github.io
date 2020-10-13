@@ -59,7 +59,7 @@
   "headline": "시작하기",
   "description" : "구글 크롬웹 스토어에서 TVExtBot를 자신의 크롬 브라우저에 추가한 후 아래의 설명을 참고하여 설정해 주세요.\n",
   "inLanguage" : "ko",
-  "wordCount":  814 ,
+  "wordCount":  846 ,
   "datePublished" : "2019-03-02T10:19:39",
   "dateModified" : "2019-03-02T10:19:39",
   "image" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
@@ -554,9 +554,15 @@ if (!doNotTrack) {
 <h3 id="주문메시지-작성">주문메시지 작성</h3>
 <br>
 <div id="alert" class="alert alert-danger">
-    <h5 class="alert-heading"><i class="fa fa-comment"></i> 유의사항</h5>
-    얼러트가 동시에 발생할 경우 한쪽의 주문이 실행 안될 가능성이 있습니다.<br>
-    동시에 주문이 발생할 가능성이 있는 주문 메시지에는 반드시 지연시간(딜레이)을 설정하여 주세요.
+    <h4 class="alert-heading"><i class="fa fa-comment"></i> 유의사항</h4>
+    <h5>
+    1분이내에 하나의 거래소에서 최대 10회 이상의 주문을 실행할 수 없습니다.<br>
+    만약 1분이내의 10회 이상의 주문을 했을 경우 11회부터는 무시됩니다. (다시 1분후에는 정상적으로 매매 가능)<br><br>
+    <span class="text-info">
+    ※ 얼마전 바이낸스선물에서 1분간 2400회 이상의 요청(주문)이 발생하여 바이낸스 서버가 디도스공격으로 인식해 봇서버의 IP가 차단되어 일시적으로 주문이 안되는 문제가 발생하였습니다.<br>
+    이로 인해 분당 최대주문횟수를 10회로 제한하니 양해해 주시기를 바랍니다.
+    </span>
+    </h5>
 </div>
 <h5 class="text-info"><i class="fas fa-hand-point-right"></i> 공개지표인 슈퍼트랜드지표를 이용하여 롱시그널 발생시 청산→매수, 숏시그널 발생시 청산→매도를 예로 설명하겠습니다.</h5>
 <h5 class="text-danger"><i class="fas fa-hand-point-right"></i> 트레이딩뷰의 얼러트 메시지란에 추가할수 있는 주문메시지는 최대 10개까지 입력가능합니다.</h5>
