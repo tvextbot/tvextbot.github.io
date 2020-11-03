@@ -7,10 +7,25 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Sun, 12 Jul 2020 16:04:56 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 20:54:51 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TVExtBot 인증키 유효기간 최대 6개월 연장 이벤트</title>
+      <link>https://tvextbot.github.io/post/events/</link>
+      <pubDate>Thu, 29 Oct 2020 20:54:51 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/events/</guid>
+      <description>&lt;div id=&#34;alert&#34; class=&#34;alert alert-info&#34;&gt;
+    &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fas fa-gift&#34;&gt;&lt;/i&gt; TVExtBot 인증키 유효기간 최대 6개월 연장 이벤트(11월30일까지)&lt;/h4&gt;
+    &lt;span class=&#34;text-light font-weight-bold&#34;&gt;
+        &lt;i class=&#34;far fa-hand-point-right&#34;&gt;&amp;nbsp;&lt;/i&gt; 바이빗과 바이낸스의 추천인 링크를 통해 동시 가입하신 후 실거래에 이용해 주시는 유료 사용자분들에게 &lt;span class=&#34;text-danger&#34;&gt;최대 6개월까지 인증키를 연장&lt;/span&gt;해 드리겠습니다.
+    &lt;/span&gt;
+    &lt;span class=&#34;badge badge-default&#34;&gt;※ 하나의 거래소만 가입할 경우 3개월 연장&lt;/span&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>변동성돌파지표(프리미엄사용자무료)</title>
@@ -60,17 +75,6 @@ TVExtBot에서 양방향 포지션 모드를 설정해서 사용하는 방법을
       <guid>https://tvextbot.github.io/post/indicator_bo/</guid>
       <description>&lt;p&gt;수렴 또는 횡보하는 차트에서 상방으로 이탈할때에는 매수하고 하방으로 이탈할때에는 매도하는 돌파매매를 할때 유용하게 사용할수 있는 지표를 만들어 보았습니다.&lt;br&gt;
 &lt;span class=&#34;text-primary&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34;&gt;&lt;/i&gt; 지표를 사용하고 싶으신분은 &lt;a class=&#34;text-white&#34; href=&#34;mailto:tvextbot@gmail.com&#34; target=&#34;_blank&#34;&gt;메일(&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt;)&lt;/a&gt;로 트레이딩뷰의 아이디와 함께 연락주시면 해당 스크립트를 공유해드리겠습니다.&lt;/span&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>【이벤트】 인증키 유효기간 2개월 연장</title>
-      <link>https://tvextbot.github.io/post/event/</link>
-      <pubDate>Mon, 13 Jan 2020 21:16:07 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/event/</guid>
-      <description> 인증키 유효기간 2개월 연장 이벤트  아래의 바이비트 추천인 링크를 통해 신규계정을 등록후 실거래에 이용해 주시는 유료 사용자분들에게 인증키를 2개월 더 연장해 드리겠습니다.
- 바이비트 추천인 링크   Bybit거래소에 신규로 등록하신분은 15%수수료할인과최대90달러까지 받을수 있습니다.※증정금 받기
- Bybit계정의 UID와 첫거래 내역을 캡쳐해서 인증키 등록시 사용하신 메일()로 보내주세요.※ UID 확인방법&amp;nbsp; </description>
     </item>
     
     <item>
