@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Fri, 20 Nov 2020 09:39:56 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 14:49:05 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>바이빗 바이낸스 거래소 수수료 할인 혜택</title>
+      <link>https://tvextbot.github.io/post/event/</link>
+      <pubDate>Tue, 01 Dec 2020 14:49:05 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/event/</guid>
+      <description> 바이빗 수수료 15% 평생 할인&amp;증정금혜택  바이빗 거래소의 추천인 링크  를 통해 신규가입을 해주시는 사용자분은 바이빗 거래수수료 15% 평생 할인과 최대90달러까지 증정금 을 받을 수 있습니다.   바이낸스 수수료 20% 평생 할인(현물)  바이낸스 거래소의 추천인 링크  를 통해 신규가입을 해주시는 사용자분은 바이낸스 현물 거래수수료 20% 평생 할인과 선물 기간한정 10% 수수료 할인을 받을 수 있습니다.  </description>
+    </item>
     
     <item>
       <title>TVExtBot 확장프로그램 수동 업데이트</title>
@@ -19,21 +28,6 @@
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/extension_update/</guid>
       <description>&lt;p&gt;TVExtBot의 프로 버전을 사용하시는 사용자님은 아래의 방법으로 수동 업데이트해 주세요.&lt;br&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>TVExtBot 인증키 유효기간 최대 6개월 연장 이벤트</title>
-      <link>https://tvextbot.github.io/post/events/</link>
-      <pubDate>Thu, 29 Oct 2020 20:54:51 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/events/</guid>
-      <description>&lt;div id=&#34;alert&#34; class=&#34;alert alert-info&#34;&gt;
-    &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fas fa-gift&#34;&gt;&lt;/i&gt; TVExtBot 인증키 유효기간 최대 6개월 연장 이벤트(11월30일까지)&lt;/h4&gt;
-    &lt;span class=&#34;text-light font-weight-bold&#34;&gt;
-        &lt;i class=&#34;far fa-hand-point-right&#34;&gt;&amp;nbsp;&lt;/i&gt; 바이빗과 바이낸스의 추천인 링크를 통해 동시 가입하신 후 실거래에 이용해 주시는 유료 사용자분들에게 &lt;span class=&#34;text-danger&#34;&gt;최대 6개월까지 인증키를 연장&lt;/span&gt;해 드리겠습니다.
-    &lt;/span&gt;
-    &lt;span class=&#34;badge badge-default&#34;&gt;※ 하나의 거래소만 가입할 경우 3개월 연장&lt;/span&gt;
-&lt;/div&gt;</description>
     </item>
     
     <item>
