@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Fri, 04 Dec 2020 11:22:02 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 03 Dec 2020 11:22:02 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법</title>
       <link>https://tvextbot.github.io/post/strategy_alert/</link>
-      <pubDate>Fri, 04 Dec 2020 11:22:02 +0900</pubDate>
+      <pubDate>Thu, 03 Dec 2020 11:22:02 +0900</pubDate>
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/strategy_alert/</guid>
       <description>&lt;p&gt;파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.&lt;br&gt;
