@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법 - TVExtBot</title>
+  <meta name="description" content="파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.
+어느정도 파인스크립트에 대한 기본지식이 필요하니 파인스크립트 기초  를 참고해 주세요.">
+  <meta name="author" content="bk.son"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "TVExtBot",
+    
+    "url": "https:\/\/tvextbot.github.io"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/tvextbot.github.io"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/tvextbot.github.io",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/tvextbot.github.io\/post\/strategy_alert\/",
+          "name": "파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "bk.son"
+  },
+  "headline": "파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법",
+  "description" : "파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.\n어느정도 파인스크립트에 대한 기본지식이 필요하니 파인스크립트 기초  를 참고해 주세요.\n",
+  "inLanguage" : "ko",
+  "wordCount":  366 ,
+  "datePublished" : "2020-12-04T11:22:02",
+  "dateModified" : "2020-12-04T11:22:02",
+  "image" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/tvextbot.github.io\/post\/strategy_alert\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/tvextbot.github.io",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법" />
+<meta property="og:description" content="파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.
+어느정도 파인스크립트에 대한 기본지식이 필요하니 파인스크립트 기초  를 참고해 주세요.">
+<meta property="og:image" content="https://tvextbot.github.io/img/avatar-icon.png" />
+<meta property="og:url" content="https://tvextbot.github.io/post/strategy_alert/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="TVExtBot" />
+
+  <meta name="twitter:title" content="파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법" />
+  <meta name="twitter:description" content="파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.
+어느정도 파인스크립트에 대한 기본지식이 필요하니 파인스크립트 기초  를 참고해 주세요.">
+  <meta name="twitter:image" content="https://tvextbot.github.io/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@tvextbot" />
+  <meta name="twitter:creator" content="@tvextbot" />
+  <link href='https://tvextbot.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.73.0" />
+  <link rel="alternate" href="https://tvextbot.github.io/index.xml" type="application/rss+xml" title="TVExtBot"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://tvextbot.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" /><link rel="stylesheet" href="https://tvextbot.github.io/css/syntax.css" /><link rel="stylesheet" href="https://tvextbot.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136222945-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">네비게이션 토글</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://tvextbot.github.io">TVExtBot</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">사용법</a>
+              <div class="navlinks-children">
+                
+                  <a href="/post/first">시작하기</a>
+                
+                  <a href="/post/quickorder">퀵주문기능</a>
+                
+                  <a href="/post/orderlist">주문취소기능</a>
+                
+                  <a href="/post/addaccount">계정추가기능</a>
+                
+                  <a href="/post/authguide">인증키등록&amp;구매가이드</a>
+                
+                  <a href="/post/telegram">텔레그램알림봇설정</a>
+                
+                  <a href="/post/webhook">웹훅URL에의한자동매매</a>
+                
+                  <a href="/post/binance_dual_positions">바이낸스선물양방향포지션설정</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent">전략&amp;지표</a>
+              <div class="navlinks-children">
+                
+                  <a href="/post/basis">기초</a>
+                
+                  <a href="/post/strategy_rsi">RSI</a>
+                
+                  <a href="/post/indicators">각종지표</a>
+                
+                  <a href="/post/indicator_hazema">하이킨아시</a>
+                
+                  <a href="/post/indicator_bo">역지정매매</a>
+                
+                  <a href="/post/indicator_vbi">변동성돌파지표</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="문제해결" href="/post/troubleshooting/">문제해결</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="정보" href="/page/about/">정보</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="TVExtBot" href="https://tvextbot.github.io">
+            <img class="avatar-img" src="https://tvextbot.github.io/img/avatar-icon.png" alt="TVExtBot" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;December 4, 2020에 게시됨
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;분
+  
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;bk.son
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.<br>
+어느정도 파인스크립트에 대한 기본지식이 필요하니 <a href="/post/basis">파인스크립트 기초</a> <i class="fas fa-external-link-alt"></i> 를 참고해 주세요.</p>
+<h3 id="전략strategy-스크립트-준비하기">전략(strategy) 스크립트 준비하기</h3>
+<p><span class="text-primary">[Pine스크립트] <span class="text-danger">※ 설명을 위한 샘플입니다.실제 매매에는 사용하지 마세요.</span></span>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln"> 1</span><span class="c1">//@version=4
+</span><span class="ln"> 2</span><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="s2">&#34;Take profits &amp; stop losses&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+<span class="ln"> 3</span>
+<span class="ln"> 4</span><span class="c1">// Create Indicator&#39;s
+</span><span class="ln"> 5</span><span class="c1"></span><span class="nx">shortSMA</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="ln"> 6</span><span class="nx">longSMA</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="ln"> 7</span><span class="nx">rsi</span> <span class="o">=</span> <span class="nx">rsi</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="ln"> 8</span><span class="nx">atr</span> <span class="o">=</span> <span class="nx">atr</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="c1">// Specify crossover conditions
+</span><span class="ln">11</span><span class="c1"></span><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">shortSMA</span><span class="p">,</span> <span class="nx">longSMA</span><span class="p">)</span>
+<span class="ln">12</span><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">shortSMA</span><span class="p">,</span> <span class="nx">longSMA</span><span class="p">)</span>
+<span class="ln">13</span>
+<span class="ln">14</span><span class="c1">// Execute trade if condition is True
+</span><span class="ln">15</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nx">longCondition</span><span class="p">)</span>
+<span class="ln">16</span>    <span class="nx">stopLoss</span> <span class="o">=</span> <span class="nx">low</span> <span class="o">-</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="ln">17</span>    <span class="nx">takeProfit</span> <span class="o">=</span> <span class="nx">high</span> <span class="o">+</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="hl"><span class="ln">18</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">rsi</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">)</span>
+</span><span class="hl"><span class="ln">19</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="s2">&#34;exit&#34;</span><span class="p">,</span> <span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="nx">stop</span><span class="o">=</span><span class="nx">stopLoss</span><span class="p">,</span> <span class="nx">limit</span><span class="o">=</span><span class="nx">takeProfit</span><span class="p">)</span>
+</span><span class="ln">20</span>
+<span class="ln">21</span><span class="k">if</span> <span class="p">(</span><span class="nx">shortCondition</span><span class="p">)</span>
+<span class="ln">22</span>    <span class="nx">stopLoss</span> <span class="o">=</span> <span class="nx">high</span> <span class="o">+</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="ln">23</span>    <span class="nx">takeProfit</span> <span class="o">=</span> <span class="nx">low</span> <span class="o">-</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="hl"><span class="ln">24</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;short&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">rsi</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">)</span>
+</span><span class="hl"><span class="ln">25</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="s2">&#34;exit&#34;</span><span class="p">,</span> <span class="s2">&#34;short&#34;</span><span class="p">,</span> <span class="nx">stop</span><span class="o">=</span><span class="nx">stopLoss</span><span class="p">,</span> <span class="nx">limit</span><span class="o">=</span><span class="nx">takeProfit</span><span class="p">)</span>
+</span><span class="ln">26</span>
+<span class="ln">27</span><span class="c1">// Plot Moving Average&#39;s to chart
+</span><span class="ln">28</span><span class="c1"></span><span class="nx">plot</span><span class="p">(</span><span class="nx">shortSMA</span><span class="p">)</span>
+<span class="ln">29</span><span class="nx">plot</span><span class="p">(</span><span class="nx">longSMA</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">color</span><span class="p">.</span><span class="nx">black</span><span class="p">)</span>
+</code></pre></div></p>
+<p>앞으로 수정할 코드는 위의 소스에서 18번째,19번째,24번째,25번째줄입니다.</p>
+<div id="alert" class="alert alert-info">
+    <h6 class="alert-heading">설명</h6>
+    <ul>
+        <li>18번째줄에서 매수진입을 하여 19번째에서 매수청산을 합니다.</li>
+        <li>24번째줄에서 매도진입을 하여 25번째에서 매도청산을 합니다.</li>
+    </ul>
+</div>
+<p>바이빗 거래소 15분차트의 백테스트 결과입니다.
+
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/strategy_sample.png"  itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/strategy_sample.png"
+            
+            />
+    </a>
+    
+</figure></p>
+<h3 id="전략strategy에-주문메시지-설정하기">전략(strategy에 주문메시지 설정하기</h3>
+<p>위의 전략에 맞게 3개의 주문메시지를 작성합니다.(바아빗기준)</p>
+<h6>매수용 주문메시지</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit-testnet&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;buy&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span><span class="s2">&#34;token&#34;</span><span class="o">:</span><span class="s2">&#34;토큰&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h6>매도용 주문메시지</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit-testnet&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;sell&#34;</span><span class="p">,</span><span class="s2">&#34;bal_pct&#34;</span><span class="o">:</span><span class="mi">50</span><span class="p">,</span><span class="s2">&#34;token&#34;</span><span class="o">:</span><span class="s2">&#34;토큰&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<h6>청산용 주문메시지</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">TVM</span><span class="o">:</span><span class="p">{</span><span class="s2">&#34;exchange&#34;</span><span class="o">:</span><span class="s2">&#34;bybit-testnet&#34;</span><span class="p">,</span><span class="s2">&#34;account&#34;</span><span class="o">:</span><span class="s2">&#34;*&#34;</span><span class="p">,</span><span class="s2">&#34;symbol&#34;</span><span class="o">:</span><span class="s2">&#34;BTC/USD&#34;</span><span class="p">,</span><span class="s2">&#34;type&#34;</span><span class="o">:</span><span class="s2">&#34;market&#34;</span><span class="p">,</span><span class="s2">&#34;side&#34;</span><span class="o">:</span><span class="s2">&#34;close&#34;</span><span class="p">,</span><span class="s2">&#34;token&#34;</span><span class="o">:</span><span class="s2">&#34;토큰&#34;</span><span class="p">}</span><span class="o">:</span><span class="nx">MVT</span>
+</code></pre></td></tr></table>
+</div>
+</div>
+<br>
+위의 주문메시지를 아래와 같이 전략 스크립트에 추가합니다.
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln"> 1</span><span class="c1">//@version=4
+</span><span class="ln"> 2</span><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="s2">&#34;Take profits &amp; stop losses&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+<span class="ln"> 3</span>
+<span class="ln"> 4</span><span class="c1">// Create Indicator&#39;s
+</span><span class="ln"> 5</span><span class="c1"></span><span class="nx">shortSMA</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="ln"> 6</span><span class="nx">longSMA</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="ln"> 7</span><span class="nx">rsi</span> <span class="o">=</span> <span class="nx">rsi</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+<span class="ln"> 8</span><span class="nx">atr</span> <span class="o">=</span> <span class="nx">atr</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
+<span class="ln"> 9</span>
+<span class="ln">10</span><span class="c1">// Specify crossover conditions
+</span><span class="ln">11</span><span class="c1"></span><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">shortSMA</span><span class="p">,</span> <span class="nx">longSMA</span><span class="p">)</span>
+<span class="ln">12</span><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">shortSMA</span><span class="p">,</span> <span class="nx">longSMA</span><span class="p">)</span>
+<span class="ln">13</span>
+<span class="ln">14</span><span class="c1">// Execute trade if condition is True
+</span><span class="ln">15</span><span class="c1"></span><span class="k">if</span> <span class="p">(</span><span class="nx">longCondition</span><span class="p">)</span>
+<span class="ln">16</span>    <span class="nx">stopLoss</span> <span class="o">=</span> <span class="nx">low</span> <span class="o">-</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="ln">17</span>    <span class="nx">takeProfit</span> <span class="o">=</span> <span class="nx">high</span> <span class="o">+</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="hl"><span class="ln">18</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">rsi</span> <span class="o">&gt;</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">alert_message</span><span class="o">=</span><span class="s1">&#39;TVM:{&#34;exchange&#34;:&#34;bybit-testnet&#34;,&#34;account&#34;:&#34;*&#34;,&#34;symbol&#34;:&#34;BTC/USD&#34;,&#34;type&#34;:&#34;market&#34;,&#34;side&#34;:&#34;buy&#34;,&#34;bal_pct&#34;:50,&#34;token&#34;:&#34;토큰&#34;}:MVT&#39;</span><span class="p">)</span>
+</span><span class="hl"><span class="ln">19</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="s2">&#34;exit&#34;</span><span class="p">,</span> <span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="nx">stop</span><span class="o">=</span><span class="nx">stopLoss</span><span class="p">,</span> <span class="nx">limit</span><span class="o">=</span><span class="nx">takeProfit</span><span class="p">,</span> <span class="nx">alert_message</span><span class="o">=</span><span class="s1">&#39;TVM:{&#34;exchange&#34;:&#34;bybit-testnet&#34;,&#34;account&#34;:&#34;*&#34;,&#34;symbol&#34;:&#34;BTC/USD&#34;,&#34;type&#34;:&#34;market&#34;,&#34;side&#34;:&#34;close&#34;,&#34;token&#34;:&#34;토큰&#34;}:MVT&#39;</span><span class="p">)</span>
+</span><span class="ln">20</span>
+<span class="ln">21</span><span class="k">if</span> <span class="p">(</span><span class="nx">shortCondition</span><span class="p">)</span>
+<span class="ln">22</span>    <span class="nx">stopLoss</span> <span class="o">=</span> <span class="nx">high</span> <span class="o">+</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="ln">23</span>    <span class="nx">takeProfit</span> <span class="o">=</span> <span class="nx">low</span> <span class="o">-</span> <span class="nx">atr</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="hl"><span class="ln">24</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;short&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">rsi</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">alert_message</span><span class="o">=</span><span class="s1">&#39;TVM:{&#34;exchange&#34;:&#34;bybit-testnet&#34;,&#34;account&#34;:&#34;*&#34;,&#34;symbol&#34;:&#34;BTC/USD&#34;,&#34;type&#34;:&#34;market&#34;,&#34;side&#34;:&#34;sell&#34;,&#34;bal_pct&#34;:50,&#34;token&#34;:&#34;토큰&#34;}:MVT&#39;</span><span class="p">)</span>
+</span><span class="hl"><span class="ln">25</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="s2">&#34;exit&#34;</span><span class="p">,</span> <span class="s2">&#34;short&#34;</span><span class="p">,</span> <span class="nx">stop</span><span class="o">=</span><span class="nx">stopLoss</span><span class="p">,</span> <span class="nx">limit</span><span class="o">=</span><span class="nx">takeProfit</span><span class="p">,</span> <span class="nx">alert_message</span><span class="o">=</span><span class="s1">&#39;TVM:{&#34;exchange&#34;:&#34;bybit-testnet&#34;,&#34;account&#34;:&#34;*&#34;,&#34;symbol&#34;:&#34;BTC/USD&#34;,&#34;type&#34;:&#34;market&#34;,&#34;side&#34;:&#34;close&#34;,&#34;token&#34;:&#34;토큰&#34;}:MVT&#39;</span><span class="p">)</span>
+</span><span class="ln">26</span>
+<span class="ln">27</span><span class="c1">// Plot Moving Average&#39;s to chart
+</span><span class="ln">28</span><span class="c1"></span><span class="nx">plot</span><span class="p">(</span><span class="nx">shortSMA</span><span class="p">)</span>
+<span class="ln">29</span><span class="nx">plot</span><span class="p">(</span><span class="nx">longSMA</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">color</span><span class="p">.</span><span class="nx">black</span><span class="p">)</span>
+</code></pre></div>
+<h4><span class="text-primary">
+    strategy.entry함수와 strategy.exit함수에 alert_message 속성을 추가한뒤 위의 주문메시지를 설정합니다.<br>
+    <span class="text-danger">※ 여기서 중요한건 alert_message에 주문메시지를 설정할때 쌍따옴표(")가 아니라 따움표(')로 해야합니다. (예) alert_message='주문메시지'</span>
+</span></h4>
+<h3 id="얼러트-설정하기">얼러트 설정하기</h3>
+<p>아래와 같이 얼러트를 추가합니다.</p>
+<h4><span class="text-primary">메시지란에 {{strategy.order.alert_message}} 을 설정합니다.</span></h4>
+
+
+<figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+    <a href="/img/strategy_alert.png"  itemprop="contentUrl"> 
+        <img itemprop="thumbnail"
+            src="/img/strategy_alert.png"
+            
+            />
+    </a>
+    
+</figure>
+<h4><span class="text-danger">※ 4개의 시그널이 발생하지만 얼러트는 하나만 설정하면 됩니다.</span></h4>
+
+        
+
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://tvextbot.github.io/post/event/" data-toggle="tooltip" data-placement="top" title="바이빗 바이낸스 거래소 수수료 할인 혜택">&larr; 이전 글</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+        
+          
+          <div class="disqus-comments">                  
+            <button id="show-comments" class="btn btn-default" type="button">표시 <span class="disqus-comment-count" data-disqus-url="https://tvextbot.github.io/post/strategy_alert">댓글들</span></button>
+            <div id="disqus_thread"></div>
+
+            <script type="text/javascript">
+              var disqus_config = function () {
+              this.page.url = 'https:\/\/tvextbot.github.io\/post\/strategy_alert';
+            };
+
+          </script>
+          </div>
+          
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="mailto:tvextbot@gmail.com" title="Email me">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/tvextbot/strategies" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/tvextbot" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://telegram.me/bkson55" title="Telegram">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-telegram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="tvextbot.github.io">bk.son</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://tvextbot.github.io">TVExtBot</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://tvextbot.github.io/js/main.js"></script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://tvextbot.github.io/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+  $('#show-comments').on('click', function(){
+    var disqus_shortname = 'tvextbot';
+      
+    (function() {
+      var disqus = document.createElement('script'); 
+      disqus.type = 'text/javascript'; 
+      disqus.async = true;
+      disqus.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(disqus);
+    })();
+      
+    $(this).hide(); 
+    });
+  });
+      
+</script>
+<script id="dsq-count-scr" src="//tvextbot.disqus.com/count.js" async></script>
+
+
+
+
+    
+  </body>
+</html>
+
