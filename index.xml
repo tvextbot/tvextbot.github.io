@@ -122,17 +122,6 @@ TVExtBot에서 양방향 포지션 모드를 설정해서 사용하는 방법을
     </item>
     
     <item>
-      <title>하이킨아시 트렌드 지표 v1.0</title>
-      <link>https://tvextbot.github.io/post/indicator_hazema/</link>
-      <pubDate>Fri, 22 Nov 2019 17:32:56 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/indicator_hazema/</guid>
-      <description>&lt;p&gt;하이킨아시와 EMA, 볼린저밴드, RSI, 캔들패턴을 활용한 자동매매용 지표를 소개하겠습니다.(&lt;span class=&#34;text-danger&#34;&gt;※ 현재 개발중&lt;/span&gt;)&lt;br&gt;
-이 지표는 TVExtBot을 유료 사용자분들에게만 공개할 예정입니다.&lt;br&gt;
-TVExtBot 유료사용자중에서 사용을 원하시는분이나 함께 개발에 참여하여 아이디어를 제공해 주실분들이 계시면 메일로 트레이딩뷰의 아이디를 보내주세요.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title> 하나의 거래소에 2개이상의 계정추가기능</title>
       <link>https://tvextbot.github.io/post/addaccount/</link>
       <pubDate>Sun, 03 Nov 2019 21:57:11 +0900</pubDate>
