@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Tue, 09 Mar 2021 21:02:02 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 18 Jun 2021 21:02:02 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,11 +15,52 @@
     <item>
       <title>변동성 돌파 플러스 지표</title>
       <link>https://tvextbot.github.io/post/indicator_vbi_plus/</link>
-      <pubDate>Tue, 09 Mar 2021 21:02:02 +0900</pubDate>
+      <pubDate>Fri, 18 Jun 2021 21:02:02 +0900</pubDate>
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/indicator_vbi_plus/</guid>
       <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 플러스 지표&lt;/span&gt;는 &lt;span class=&#34;text-danger h4&#34;&gt;EXPERT (엑스퍼트) 사용자에 한해서 무료 배포중&lt;/span&gt; 입니다.&lt;br&gt;
 변동성 돌파 플러스 전략은 기존 변동성 돌파 전략을 보완하여 장기 추세로 수정한 장기매매 전략입니다.&lt;br&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 기본 지표</title>
+      <link>https://tvextbot.github.io/post/indicator_vbi/</link>
+      <pubDate>Mon, 10 May 2021 16:04:56 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/indicator_vbi/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 기본 지표&lt;/span&gt;는 &lt;span class=&#34;text-danger h4&#34;&gt;ADVANCED (어드밴스드) 사용자에 한해서 무료 배포중&lt;/span&gt; 입니다.&lt;br&gt;
+변동성 돌파 지표란 전설적인 트레이더 래리 윌리엄스(Larry R. Williams)의 변동성 돌파 전략을 기본으로 개발한 지표입니다.&lt;br&gt;&lt;/p&gt;
+&lt;h6 class=&#34;text-danger&#34;&gt;※ ADVANCED (어드밴스드)는 프리미엄 플러스 버전의 새로운 명칭입니다.&lt;/h6&gt;</description>
+    </item>
+    
+    <item>
+      <title>FTX 거래소의 하위계정 사용방법</title>
+      <link>https://tvextbot.github.io/post/ftx_subaccount/</link>
+      <pubDate>Wed, 05 May 2021 12:34:00 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/ftx_subaccount/</guid>
+      <description>&lt;p&gt;FTX의 상위계정은 기본적으로 교차마진만 지원합니다.격리마진을 하시려면 FTX거래소에서 하위계정을 생성후 하위계정명으로 API키를 추가할 필요가 있습니다.
+&lt;span class=&#34;text-danger&#34;&gt;(※ FTX의 하위계정을 통해 격리 마진 포지션을 이용하면 최대 위험 한도를 제한 할 수 있습니다.)&lt;/span&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4 class=&#34;text-primary&#34;&gt;&lt;i class=&#34;fas fa-hand-point-right&#34;&gt;&lt;/i&gt; 하위계정에 사용할 API키는 반드시 상위계정에서 작성해 주세요.&lt;/h4&gt;</description>
+    </item>
+    
+    <item>
+      <title>파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법</title>
+      <link>https://tvextbot.github.io/post/strategy_alert/</link>
+      <pubDate>Mon, 03 May 2021 11:22:02 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/strategy_alert/</guid>
+      <description>&lt;p&gt;파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.&lt;br&gt;
+어느정도 파인스크립트에 대한 기본지식이 필요하니 &lt;a href=&#34;https://tvextbot.github.io/post/basis&#34;&gt;파인스크립트 기초&lt;/a&gt; &lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; 를 참고해 주세요.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bitget 거래소 수수료 할인 혜택</title>
+      <link>https://tvextbot.github.io/post/event3/</link>
+      <pubDate>Tue, 20 Apr 2021 13:35:00 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/event3/</guid>
+      <description> Bitget 거래소 수수료 평생 50%할인  Bitget 거래소의 추천인 링크  를 통해 신규가입을 하시면 거래수수료 평생 50%할인과 첫 충전시 충전금액의 5%(최대 50USDT)을 받을 수 있습니다.  </description>
     </item>
     
     <item>
@@ -32,32 +73,21 @@
     </item>
     
     <item>
-      <title>바이빗 바이낸스 거래소 수수료 할인 혜택</title>
+      <title>바이낸스 거래소 수수료 할인 혜택</title>
+      <link>https://tvextbot.github.io/post/event1/</link>
+      <pubDate>Sun, 21 Feb 2021 13:34:00 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/event1/</guid>
+      <description> 바이낸스 수수료 20% 할인(현물)  바이낸스 거래소의 추천인 링크  를 통해 신규가입을 하시면 바이낸스 현물 거래수수료 20% 할인과 선물 기간한정 10% 수수료 할인을 받을 수 있습니다.  </description>
+    </item>
+    
+    <item>
+      <title>바이빗 거래소 수수료 할인 혜택</title>
       <link>https://tvextbot.github.io/post/event/</link>
       <pubDate>Sun, 21 Feb 2021 13:34:00 +0900</pubDate>
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/event/</guid>
-      <description> 바이빗 수수료 최대 20% 할인&amp;증정금혜택  바이빗 거래소의 추천인 링크  를 통해 신규가입을 하시면 바이빗 거래수수료 최대 20% 할인과 최대90달러까지 증정금 을 받을 수 있습니다. ※ 바이빗의 수수료 할인 정책 변경으로 레퍼럴의 전체 거래량이 200btc를 넘지 못하면 15%만 적용됩니다.   바이낸스 수수료 20% 할인(현물)  바이낸스 거래소의 추천인 링크  를 통해 신규가입을 하시면 바이낸스 현물 거래수수료 20% 할인과 선물 기간한정 10% 수수료 할인을 받을 수 있습니다.  </description>
-    </item>
-    
-    <item>
-      <title>FTX 거래소의 하위계정 사용방법</title>
-      <link>https://tvextbot.github.io/post/ftx_subaccount/</link>
-      <pubDate>Sun, 21 Feb 2021 12:34:00 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/ftx_subaccount/</guid>
-      <description>&lt;p&gt;FTX의 상위계정은 기본적으로 교차마진만 지원합니다.격리마진을 하시려면 FTX거래소에서 하위계정을 생성후 하위계정명으로 API키를 추가할 필요가 있습니다.
-&lt;span class=&#34;text-danger&#34;&gt;(※ FTX의 하위계정을 통해 격리 마진 포지션을 이용하면 최대 위험 한도를 제한 할 수 있습니다.)&lt;/span&gt;&lt;br&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>파인스크립트 전략(strategy)을 사용하여 자동매매하는 방법</title>
-      <link>https://tvextbot.github.io/post/strategy_alert/</link>
-      <pubDate>Thu, 03 Dec 2020 11:22:02 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/strategy_alert/</guid>
-      <description>&lt;p&gt;파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.&lt;br&gt;
-어느정도 파인스크립트에 대한 기본지식이 필요하니 &lt;a href=&#34;https://tvextbot.github.io/post/basis&#34;&gt;파인스크립트 기초&lt;/a&gt; &lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; 를 참고해 주세요.&lt;/p&gt;</description>
+      <description> 바이빗 수수료 최대 20% 할인&amp;증정금혜택  바이빗 거래소의 추천인 링크  를 통해 신규가입을 하시면 바이빗 거래수수료 최대 20% 할인과 최대90달러까지 증정금 을 받을 수 있습니다. ※ 바이빗의 수수료 할인 정책 변경으로 레퍼럴의 전체 거래량이 200btc를 넘지 못하면 15%만 적용됩니다.  </description>
     </item>
     
     <item>
@@ -67,17 +97,6 @@
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/extension_update/</guid>
       <description>&lt;p&gt;TVExtBot의 프로 버전을 사용하시는 사용자님은 아래의 방법으로 수동 업데이트해 주세요.&lt;br&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>변동성 돌파 기본 지표</title>
-      <link>https://tvextbot.github.io/post/indicator_vbi/</link>
-      <pubDate>Sun, 12 Jul 2020 16:04:56 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/indicator_vbi/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 기본 지표&lt;/span&gt;는 &lt;span class=&#34;text-danger h4&#34;&gt;ADVANCED (어드밴스드) 사용자에 한해서 무료 배포중&lt;/span&gt; 입니다.&lt;br&gt;
-변동성 돌파 지표란 전설적인 트레이더 래리 윌리엄스(Larry R. Williams)의 변동성 돌파 전략을 기본으로 개발한 지표입니다.&lt;br&gt;&lt;/p&gt;
-&lt;h6 class=&#34;text-danger&#34;&gt;※ ADVANCED (어드밴스드)는 프리미엄 플러스 버전의 새로운 명칭입니다.&lt;/h6&gt;</description>
     </item>
     
     <item>
