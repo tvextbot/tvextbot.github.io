@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Fri, 18 Jun 2021 21:02:02 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 21 Jun 2021 12:34:00 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bitget 거래소의 API키 등록방법</title>
+      <link>https://tvextbot.github.io/post/bitget_api/</link>
+      <pubDate>Mon, 21 Jun 2021 12:34:00 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/bitget_api/</guid>
+      <description>&lt;p&gt;Bitget 거래소의 API키 등록방법에 대해서 설명하겠습니다.&lt;/p&gt;
+&lt;h4 class=&#34;text-danger&#34;&gt;&lt;i class=&#34;fas fa-hand-point-right&#34;&gt;&lt;/i&gt; API키 등록시 계정명을 반드시 입력해 주세요.&lt;/h4&gt;</description>
+    </item>
     
     <item>
       <title>변동성 돌파 플러스 지표</title>
