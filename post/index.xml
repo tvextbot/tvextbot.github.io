@@ -7,10 +7,29 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Mon, 21 Jun 2021 12:34:00 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 25 Jul 2021 21:02:02 +0900</lastBuildDate>
     
 	<atom:link href="https://tvextbot.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>변동성 돌파 트렌드 전략</title>
+      <link>https://tvextbot.github.io/post/indicator_vbt/</link>
+      <pubDate>Sun, 25 Jul 2021 21:02:02 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/indicator_vbt/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 트렌드 전략&lt;/span&gt;은 변동성 돌파 기본 전략을 1시간봉과 2시간봉에 최적화하여 롱과 숏 양방향으로 매매가능하도록 수정한 단기 추세 전략입니다.&lt;/p&gt;
+&lt;div id=&#34;alert&#34; class=&#34;alert alert-danger&#34;&gt;
+    &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-comment&#34;&gt;&lt;/i&gt; 중요사항&lt;/h4&gt;
+    &lt;h5&gt;
+        &lt;ul&gt;
+            &lt;li&gt;EXPERT 사용자 전용 지표입니다.Expert 사용자이외에는 사용하실수 없습니다.&lt;/li&gt;
+            &lt;li&gt;1시간과 2시간봉에만 사용가능합니다. 그이외의 시간봉에서는 사용하지 마세요.&lt;/li&gt;
+            &lt;li&gt;지표 사용에 의해서 발생한 매매손실에 대해서는 일체 책임을 지지 않으니 유의하여 주세요.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/h5&gt;
+&lt;/div&gt;</description>
+    </item>
     
     <item>
       <title>Bitget 거래소의 API키 등록방법</title>
