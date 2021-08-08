@@ -18,13 +18,53 @@
       <pubDate>Sun, 25 Jul 2021 21:02:02 +0900</pubDate>
       <author>tvextbot@gmail.com (bk.son)</author>
       <guid>https://tvextbot.github.io/post/indicator_vbt/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 트렌드 전략&lt;/span&gt;은 변동성 돌파 기본 전략을 1시간봉과 2시간봉에 최적화하여 롱과 숏 양방향으로 매매가능하도록 수정한 단기 추세 전략입니다.&lt;/p&gt;
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;&lt;strong&gt;변동성 돌파 트렌드 전략&lt;/strong&gt;&lt;/span&gt;은 변동성 돌파 기본 전략을 1시간봉과 2시간봉에 최적화하여 롱과 숏 양방향으로 매매가능하도록 수정한 단기 추세 전략입니다.&lt;/p&gt;
 &lt;div id=&#34;alert&#34; class=&#34;alert alert-danger&#34;&gt;
     &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-comment&#34;&gt;&lt;/i&gt; 중요사항&lt;/h4&gt;
     &lt;h5&gt;
         &lt;ul&gt;
             &lt;li&gt;EXPERT 사용자 전용 지표입니다.Expert 사용자이외에는 사용하실수 없습니다.&lt;/li&gt;
             &lt;li&gt;1시간과 2시간봉에만 사용가능합니다. 그이외의 시간봉에서는 사용하지 마세요.&lt;/li&gt;
+            &lt;li&gt;고배율의 레버리지는 사용하지 마세요. 만약 레버리지를 사용하신다면 개인적으로는 2배를 추천드립니다.&lt;/li&gt;
+            &lt;li&gt;지표 사용에 의해서 발생한 매매손실에 대해서는 일체 책임을 지지 않으니 유의하여 주세요.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/h5&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 플러스 전략</title>
+      <link>https://tvextbot.github.io/post/indicator_vbi_plus/</link>
+      <pubDate>Fri, 25 Jun 2021 21:02:02 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/indicator_vbi_plus/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;&lt;strong&gt;변동성 돌파 플러스 전략&lt;/strong&gt;&lt;/span&gt;은 일 단위로 수익을 실현하는 기존 변동성 돌파 기본 전략을 보완하여 상승 추세가 지속되는한 포지션을 유지하여 수익을 극대화 할수 있도록 수정한 매매 전략입니다.&lt;/p&gt;
+&lt;div id=&#34;alert&#34; class=&#34;alert alert-danger&#34;&gt;
+    &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-comment&#34;&gt;&lt;/i&gt; 중요사항&lt;/h4&gt;
+    &lt;h5&gt;
+        &lt;ul&gt;
+            &lt;li&gt;EXPERT 사용자 전용 지표입니다.&lt;/li&gt;
+            &lt;li&gt;1일봉에만 사용가능합니다. 그이외의 시간봉에서는 사용하지 마세요.&lt;/li&gt;
+            &lt;li&gt;고배율의 레버리지는 사용하지 마세요. 만약 레버리지를 사용하신다면 개인적으로는 2배를 추천드립니다.&lt;/li&gt;
+            &lt;li&gt;지표 사용에 의해서 발생한 매매손실에 대해서는 일체 책임을 지지 않으니 유의하여 주세요.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/h5&gt;
+&lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 기본 전략</title>
+      <link>https://tvextbot.github.io/post/indicator_vbi/</link>
+      <pubDate>Thu, 24 Jun 2021 16:04:56 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/indicator_vbi/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;&lt;strong&gt;변동성 돌파 기본 전략&lt;/strong&gt;&lt;/span&gt;이란 전설적인 트레이더 래리 윌리엄스 (Larry R. Williams) 의 변동성 돌파 전략을 기본으로 개발한 전략입니다.&lt;/p&gt;
+&lt;div id=&#34;alert&#34; class=&#34;alert alert-danger&#34;&gt;
+    &lt;h4 class=&#34;alert-heading&#34;&gt;&lt;i class=&#34;fa fa-comment&#34;&gt;&lt;/i&gt; 중요사항&lt;/h4&gt;
+    &lt;h5&gt;
+        &lt;ul&gt;
+            &lt;li&gt;ADVANCED 와 EXPERT 사용자 전용 지표입니다.&lt;/li&gt;
+            &lt;li&gt;1일봉에만 사용가능합니다. 그이외의 시간봉에서는 사용하지 마세요.&lt;/li&gt;
             &lt;li&gt;고배율의 레버리지는 사용하지 마세요. 만약 레버리지를 사용하신다면 개인적으로는 2배를 추천드립니다.&lt;/li&gt;
             &lt;li&gt;지표 사용에 의해서 발생한 매매손실에 대해서는 일체 책임을 지지 않으니 유의하여 주세요.&lt;/li&gt;
         &lt;/ul&gt;
@@ -40,27 +80,6 @@
       <guid>https://tvextbot.github.io/post/bitget_api/</guid>
       <description>&lt;p&gt;Bitget 거래소의 API키 등록방법에 대해서 설명하겠습니다.&lt;/p&gt;
 &lt;h4 class=&#34;text-danger&#34;&gt;&lt;i class=&#34;fas fa-hand-point-right&#34;&gt;&lt;/i&gt; API키 등록시 계정명을 반드시 입력해 주세요.&lt;/h4&gt;</description>
-    </item>
-    
-    <item>
-      <title>변동성 돌파 플러스 지표</title>
-      <link>https://tvextbot.github.io/post/indicator_vbi_plus/</link>
-      <pubDate>Fri, 18 Jun 2021 21:02:02 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/indicator_vbi_plus/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 플러스 지표&lt;/span&gt;는 &lt;span class=&#34;text-danger h4&#34;&gt;EXPERT 사용자에 한해서 무료 배포중&lt;/span&gt; 입니다.&lt;br&gt;
-변동성 돌파 플러스 전략은 기존 변동성 돌파 전략을 보완하여 장기 추세로 수정한 장기매매 전략입니다.&lt;br&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>변동성 돌파 기본 지표</title>
-      <link>https://tvextbot.github.io/post/indicator_vbi/</link>
-      <pubDate>Mon, 10 May 2021 16:04:56 +0900</pubDate>
-      <author>tvextbot@gmail.com (bk.son)</author>
-      <guid>https://tvextbot.github.io/post/indicator_vbi/</guid>
-      <description>&lt;p&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 기본 지표&lt;/span&gt;는 &lt;span class=&#34;text-danger h4&#34;&gt;ADVANCED 또는 EXPERT 사용자에 한해서 무료 배포중&lt;/span&gt; 입니다.&lt;br&gt;
-변동성 돌파 지표란 전설적인 트레이더 래리 윌리엄스(Larry R. Williams)의 변동성 돌파 전략을 기본으로 개발한 지표입니다.&lt;br&gt;&lt;/p&gt;
-&lt;!-- &lt;h6 class=&#34;text-danger&#34;&gt;※ ADVANCED (어드밴스드)는 프리미엄 플러스 버전의 새로운 명칭입니다.&lt;/h6&gt; --&gt;</description>
     </item>
     
     <item>
@@ -147,6 +166,28 @@ TVExtBot에서 양방향 포지션 모드를 설정해서 사용하는 방법을
       <guid>https://tvextbot.github.io/post/webhook/</guid>
       <description>&lt;p&gt;&lt;span class=&#34;text-info h4&#34;&gt;웹훅URL에 의한 자동매매&lt;/span&gt;란 &lt;span class=&#34;text-danger h4 font-weight-bold&#34;&gt;컴퓨터를 껀 상태에서도 트레이딩뷰와 연동하여 자동매매를 가능하도록한 새로운 기능&lt;/span&gt;으로
 &lt;span class=&#34;text-default font-weight-bold&#34;&gt;기존 컴퓨터를 계속 켜둬야 하거나 비싼 가격의 가상환경을 구매하여 자동매매를 해야하는 부담감에서 벗어나서 자동매매를 할 수 있습니다.&lt;/span&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 플러스 지표(구버전)</title>
+      <link>https://tvextbot.github.io/post/indicator_vbi_plus_old/</link>
+      <pubDate>Thu, 18 Jun 2020 21:02:02 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/indicator_vbi_plus_old/</guid>
+      <description>&lt;h4&gt;&lt;span class=&#34;text-danger&#34;&gt;&lt;i class=&#34;fas fa-hand-point-right&#34;&gt;&lt;/i&gt; 신버전 &lt;a class=&#34;text-muted&#34; href=&#34;https://tvextbot.github.io/post/indicator_vbi_plus_old&#34;&gt;&lt;i class=&#34;fas fa-chart-line&#34;&gt;&lt;/i&gt; 변동성 돌파 플러스 지표&lt;/a&gt; 을 사용해 주세요.&lt;/span&gt;&lt;/h4&gt;
+&lt;del&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 플러스 지표&lt;/span&gt;는 &lt;span class=&#34;text-danger h4&#34;&gt;EXPERT 사용자에 한해서 무료 배포중&lt;/span&gt; 입니다.&lt;br&gt;
+변동성 돌파 플러스 전략은 기존 변동성 돌파 전략을 보완하여 장기 추세로 수정한 장기매매 전략입니다.&lt;/del&gt;&lt;br&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 기본 지표(구버전)</title>
+      <link>https://tvextbot.github.io/post/indicator_vbi_old/</link>
+      <pubDate>Wed, 10 Jun 2020 16:04:56 +0900</pubDate>
+      <author>tvextbot@gmail.com (bk.son)</author>
+      <guid>https://tvextbot.github.io/post/indicator_vbi_old/</guid>
+      <description>&lt;h4&gt;&lt;span class=&#34;text-danger&#34;&gt;&lt;i class=&#34;fas fa-hand-point-right&#34;&gt;&lt;/i&gt; 신버전 &lt;a class=&#34;text-muted&#34; href=&#34;https://tvextbot.github.io/post/indicator_vbi_old&#34;&gt;&lt;i class=&#34;fas fa-chart-line&#34;&gt;&lt;/i&gt; 변동성 돌파 기본 지표&lt;/a&gt; 을 사용해 주세요.&lt;/span&gt;&lt;/h4&gt;
+&lt;del&gt;&lt;span class=&#34;text-primary h4&#34;&gt;변동성 돌파 기본 지표&lt;/span&gt;는 &lt;span class=&#34;text-danger h4&#34;&gt;ADVANCED 또는 EXPERT 사용자에 한해서 무료 배포중&lt;/span&gt; 입니다.&lt;br&gt;
+변동성 돌파 지표란 전설적인 트레이더 래리 윌리엄스(Larry R. Williams)의 변동성 돌파 전략을 기본으로 개발한 지표입니다.&lt;/del&gt;&lt;br&gt;</description>
     </item>
     
     <item>
