@@ -70,7 +70,7 @@
   "headline": "변동성 돌파 플러스 전략",
   "description" : "변동성 돌파 플러스 전략은 일 단위로 수익을 실현하는 기존 변동성 돌파 기본 전략을 보완하여 상승 추세가 지속되는한 포지션을 유지하여 수익을 극대화 할수 있도록 수정한 매매 전략입니다.\n 중요사항   EXPERT 사용자 전용 지표입니다. 1일봉에만 사용가능합니다. 그이외의 시간봉에서는 사용하지 마세요. 고배율의 레버리지는 사용하지 마세요. 만약 레버리지를 사용하신다면 개인적으로는 2배를 추천드립니다. 지표 사용에 의해서 발생한 매매손실에 대해서는 일체 책임을 지지 않으니 유의하여 주세요.   ",
   "inLanguage" : "ko",
-  "wordCount":  610 ,
+  "wordCount":  621 ,
   "datePublished" : "2021-06-25T21:02:02",
   "dateModified" : "2021-06-25T21:02:02",
   "image" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
@@ -582,13 +582,17 @@ if (!doNotTrack) {
     <h5>
     <ul>
         <li>⑤ 조건 : 『[TVExtBot]VBS+』 를 선택</li>
-        <li>⑥ 웹훅 URL : 『<span class="text-danger">https://tvextbot-expert.web.app/api/webhook</span>』 웹훅URL을 입력(※1)</li>
+        <li>⑥ 웹훅 URL : 『<span class="text-danger">https://tvextbot-expert.web.app/api/webhook</span>』 웹훅URL을 입력 <span class="text-danger">(※1)</span></li>
         <li>⑦ 얼러트 네임 : 『변동성돌파플러스(바이낸스현물BTC)』 를 입력 (※입력하지 않아도 됩니다)</li>
-        <li>⑧ 메시지 : 『{{strategy.order.alert_message}}』 를 입력</li>
+        <li>⑧ 메시지 : 『{{strategy.order.alert_message}}』 를 입력 <span class="text-danger">(※2)</span></li>
     </ul>
     </h5>
 </div>
 <h5 class="text-danger">(※1) 반드시 본인의 메시지 작성화면에 있는 웹훅URL을 입력해 주세요.</h5>
+<h5 class="text-danger">(※2) 아래의 내용을 복사해서 얼러트에 메시지란에 붙여쓰기 하세요.</h5>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="p">{{</span><span class="nx">strategy</span><span class="p">.</span><span class="nx">order</span><span class="p">.</span><span class="nx">alert_message</span><span class="p">}}</span>
+</code></pre></div>
+<br>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
