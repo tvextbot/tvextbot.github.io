@@ -107,7 +107,7 @@
   <meta name="twitter:site" content="@tvextbot" />
   <meta name="twitter:creator" content="@tvextbot" />
   <link href='https://tvextbot.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.73.0" />
+  <meta name="generator" content="Hugo 0.93.0" />
   <link rel="alternate" href="https://tvextbot.github.io/index.xml" type="application/rss+xml" title="TVExtBot"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://tvextbot.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -327,7 +327,7 @@ if (!doNotTrack) {
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;March 4, 2019에 게시됨
+  <i class="fas fa-calendar"></i>&nbsp;
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;분
@@ -363,53 +363,52 @@ if (!doNotTrack) {
 <li>시장의 반전을 판단</li>
 </ul>
 <p><span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">//@version=3
-</span><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="nx">title</span><span class="o">=</span><span class="s2">&#34;Bollinger Bands&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
-
-<span class="c1">//sma산출
-</span><span class="c1"></span><span class="nx">pine_sma</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">=&gt;</span>
-    <span class="nx">sum</span> <span class="o">=</span> <span class="mf">0.0</span>
-    <span class="k">for</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="nx">to</span> <span class="nx">y</span> <span class="o">-</span> <span class="mi">1</span>
-        <span class="nx">sum</span> <span class="o">:=</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">x</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">/</span> <span class="nx">y</span>
-    <span class="nx">sum</span>
-
-<span class="nx">dev</span> <span class="o">=</span> <span class="nx">stdev</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
-<span class="nx">basis</span> <span class="o">=</span> <span class="nx">pine_sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
-<span class="nx">upper_1</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">+</span> <span class="nx">dev</span>
-<span class="nx">lower_1</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">-</span> <span class="nx">dev</span>
-<span class="nx">upper_2</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">+</span> <span class="nx">dev</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="nx">lower_2</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">-</span> <span class="nx">dev</span> <span class="o">*</span> <span class="mi">2</span>
-
-<span class="nx">plot</span><span class="p">(</span><span class="nx">basis</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">)</span>
-<span class="nx">u1</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">upper_1</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">)</span>
-<span class="nx">l1</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">lower_1</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">)</span>
-<span class="nx">u2</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">upper_2</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">green</span><span class="p">)</span>
-<span class="nx">l2</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">lower_2</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">green</span><span class="p">)</span>
-<span class="nx">fill</span><span class="p">(</span><span class="nx">u2</span><span class="p">,</span><span class="nx">l2</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">green</span><span class="p">)</span>
-
-<span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="nx">threshold</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="k">if</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">&gt;</span> <span class="mi">0</span>
-    <span class="nx">count</span> <span class="o">:=</span> <span class="nx">nz</span><span class="p">(</span><span class="nx">count</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span>
-
-<span class="k">if</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">&lt;</span> <span class="mi">0</span>
-    <span class="nx">count</span> <span class="o">:=</span> <span class="nx">nz</span><span class="p">(</span><span class="nx">count</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span>
-
-<span class="k">if</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="nx">upper_2</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;Short&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="nx">lower_2</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">==</span> <span class="mi">0</span>
-    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;Long&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="nx">count</span> <span class="o">==</span> <span class="nx">threshold</span>
-    <span class="nx">strategy</span><span class="p">.</span><span class="nx">close_all</span><span class="p">()</span>
-    <span class="nx">count</span> <span class="o">:=</span> <span class="mi">0</span>
-
-<span class="k">if</span> <span class="nx">count</span> <span class="o">==</span> <span class="nx">threshold</span><span class="o">*-</span><span class="mi">1</span>
-    <span class="nx">strategy</span><span class="p">.</span><span class="nx">close_all</span><span class="p">()</span>
-    <span class="nx">count</span> <span class="o">:=</span> <span class="mi">0</span>
-</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="c1">//@version=3
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="nx">title</span><span class="o">=</span><span class="s2">&#34;Bollinger Bands&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">//sma산출
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">pine_sma</span><span class="p">(</span><span class="nx">x</span><span class="p">,</span> <span class="nx">y</span><span class="p">)</span> <span class="p">=&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sum</span> <span class="o">=</span> <span class="mf">0.0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="nx">to</span> <span class="nx">y</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">sum</span> <span class="o">:=</span> <span class="nx">sum</span> <span class="o">+</span> <span class="nx">x</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="o">/</span> <span class="nx">y</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">sum</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">dev</span> <span class="o">=</span> <span class="nx">stdev</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">basis</span> <span class="o">=</span> <span class="nx">pine_sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">upper_1</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">+</span> <span class="nx">dev</span>
+</span></span><span class="line"><span class="cl"><span class="nx">lower_1</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">-</span> <span class="nx">dev</span>
+</span></span><span class="line"><span class="cl"><span class="nx">upper_2</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">+</span> <span class="nx">dev</span> <span class="o">*</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">lower_2</span> <span class="o">=</span> <span class="nx">basis</span> <span class="o">-</span> <span class="nx">dev</span> <span class="o">*</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">basis</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">u1</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">upper_1</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">l1</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">lower_1</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">u2</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">upper_2</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">green</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">l2</span> <span class="o">=</span> <span class="nx">plot</span><span class="p">(</span><span class="nx">lower_2</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">green</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">fill</span><span class="p">(</span><span class="nx">u2</span><span class="p">,</span><span class="nx">l2</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">green</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">count</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="nx">threshold</span> <span class="o">=</span> <span class="mi">5</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">&gt;</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">count</span> <span class="o">:=</span> <span class="nx">nz</span><span class="p">(</span><span class="nx">count</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">&lt;</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">count</span> <span class="o">:=</span> <span class="nx">nz</span><span class="p">(</span><span class="nx">count</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="nx">upper_2</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">==</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;Short&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="nx">lower_2</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">strategy</span><span class="p">.</span><span class="nx">position_size</span> <span class="o">==</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;Long&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">count</span> <span class="o">==</span> <span class="nx">threshold</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">close_all</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">count</span> <span class="o">:=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nx">count</span> <span class="o">==</span> <span class="nx">threshold</span><span class="o">*-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">close_all</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">count</span> <span class="o">:=</span> <span class="mi">0</span></span></span></code></pre></div></p>
 
         
 

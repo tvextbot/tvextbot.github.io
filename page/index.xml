@@ -7,11 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>tvextbot@gmail.com (bk.son)</managingEditor>
     <webMaster>tvextbot@gmail.com (bk.son)</webMaster>
-    <lastBuildDate>Sat, 02 Mar 2019 10:36:49 +0900</lastBuildDate>
-    
-	<atom:link href="https://tvextbot.github.io/page/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 02 Mar 2019 10:36:49 +0900</lastBuildDate><atom:link href="https://tvextbot.github.io/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>정보</title>
       <link>https://tvextbot.github.io/page/about/</link>

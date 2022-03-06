@@ -60,7 +60,7 @@
   "headline": "파인스크립트 기초",
   "description" : "파인(Pine)스크립트란 트레이딩뷰 플랫폼상에서 실행가능한 스크립트이며 코딩하기 위해 Pine에디터를 제공하고 있습니다.\n종류로는 지표와 전략 스크립트가 있으며 지표는 차트의 보조지수로 활용하고 전략은 백테스팅이 가능합니다.\n",
   "inLanguage" : "ko",
-  "wordCount":  793 ,
+  "wordCount":  781 ,
   "datePublished" : "2019-03-14T21:46:21",
   "dateModified" : "2019-03-14T21:46:21",
   "image" : "https:\/\/tvextbot.github.io\/img\/avatar-icon.png",
@@ -95,7 +95,7 @@
   <meta name="twitter:site" content="@tvextbot" />
   <meta name="twitter:creator" content="@tvextbot" />
   <link href='https://tvextbot.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.73.0" />
+  <meta name="generator" content="Hugo 0.93.0" />
   <link rel="alternate" href="https://tvextbot.github.io/index.xml" type="application/rss+xml" title="TVExtBot"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://tvextbot.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -315,7 +315,7 @@ if (!doNotTrack) {
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;March 14, 2019에 게시됨
+  <i class="fas fa-calendar"></i>&nbsp;
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;4&nbsp;분
@@ -362,10 +362,9 @@ if (!doNotTrack) {
 </figure>
 그러면 Pine에디터 상에 아래와 같이 미리 준비된 템플릿 코드가 나타납니다.<br>
 <span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln">1</span><span class="c1">//@version=3
-</span><span class="ln">2</span><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;내 스크립트&#34;</span><span class="p">)</span>
-<span class="ln">3</span><span class="nx">plot</span><span class="p">(</span><span class="nx">close</span><span class="p">)</span>
-</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1">//@version=3
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;내 스크립트&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">close</span><span class="p">)</span></span></span></code></pre></div></p>
 <div id="alert" class="alert alert-info">
     <h6 class="alert-heading">설명</h6>
     <ul>
@@ -404,11 +403,10 @@ if (!doNotTrack) {
 그러면 방금전과 같이 미리 준비된 템플릿 코드가 나타납니다.
 기존의 코드를 삭제하고 아래의 코드를 붙여쓰기 한 후 [차트에 넣기]를 실행해 봅니다.<br>
 <span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln">1</span><span class="c1">//version=3
-</span><span class="ln">2</span><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;이동평균선그리기&#34;</span><span class="p">,</span><span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
-<span class="ln">3</span><span class="nx">ma</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span>
-<span class="ln">4</span><span class="nx">plot</span><span class="p">(</span><span class="nx">ma</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1">//version=3
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;이동평균선그리기&#34;</span><span class="p">,</span><span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="nx">ma</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span><span class="mi">21</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">ma</span><span class="p">)</span></span></span></code></pre></div>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -448,11 +446,10 @@ if (!doNotTrack) {
 다시 Pine에디터에서 아래와 같이 plot함수에 [color]와[linewidth]라는 속성을 추가하여 다시 [차트에 넣기]를 클릭합니다.
 (※[color]속성에는 red를 지정하고 [linewidth]속성에는 굵기를 3으로 지정합니다)<br>
 <span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln">1</span><span class="c1">//version=3
-</span><span class="ln">2</span><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;이동평균선그리기&#34;</span><span class="p">,</span><span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
-<span class="hl"><span class="ln">3</span><span class="nx">plot</span><span class="p">(</span><span class="nx">ma</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</span><span class="ln">4</span><span class="nx">plot</span><span class="p">(</span><span class="nx">ma</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln">1</span><span class="cl"><span class="c1">//version=3
+</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;이동평균선그리기&#34;</span><span class="p">,</span><span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line hl"><span class="ln">3</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">ma</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">ma</span><span class="p">)</span></span></span></code></pre></div>
 그럼 아래와 같이 굵고 빨간색의 이동평균선이 나타나는걸 확인 할 수 있습나다.<br>
 
 
@@ -520,17 +517,16 @@ if (!doNotTrack) {
 </figure>
 <br>
 <span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln"> 1</span><span class="c1">//@version=3
-</span><span class="ln"> 2</span><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="s2">&#34;내 전략&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
-<span class="ln"> 3</span>
-<span class="ln"> 4</span><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span>
-<span class="ln"> 5</span><span class="k">if</span> <span class="p">(</span><span class="nx">longCondition</span><span class="p">)</span>
-<span class="ln"> 6</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Long Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">)</span>
-<span class="ln"> 7</span>
-<span class="ln"> 8</span><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span>
-<span class="ln"> 9</span><span class="k">if</span> <span class="p">(</span><span class="nx">shortCondition</span><span class="p">)</span>
-<span class="ln">10</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Short Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">)</span>
-</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c1">//@version=3
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="s2">&#34;내 전략&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">longCondition</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Long Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">))</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">shortCondition</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Short Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">)</span></span></span></code></pre></div></p>
 <div id="alert" class="alert alert-info">
     <h6 class="alert-heading">설명</h6>
     <ul>
@@ -562,22 +558,21 @@ if (!doNotTrack) {
 <i class="fa fa-bookmark"></i> 참고로 14일 이동평균선과 28일 이동평균선을 위에서 배운 plot함수를 이용하여 차트에 표시하여 보겠습니다.<br>
 아래와 같이 14일 이동평균선은 파란색 28일 이동평균선은 빨간색으로 코드를 수정하여 저장버튼을 클릭합니다.<br>
 <span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln"> 1</span><span class="c1">//@version=3
-</span><span class="ln"> 2</span><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="s2">&#34;내 전략&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
-<span class="ln"> 3</span>
-<span class="hl"><span class="ln"> 4</span><span class="nx">sma14</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
-</span><span class="hl"><span class="ln"> 5</span><span class="nx">sma28</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
-</span><span class="hl"><span class="ln"> 6</span><span class="nx">plot</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</span><span class="hl"><span class="ln"> 7</span><span class="nx">plot</span><span class="p">(</span><span class="nx">sma28</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-</span><span class="ln"> 8</span>
-<span class="ln"> 9</span><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
-<span class="ln">10</span><span class="k">if</span> <span class="p">(</span><span class="nx">longCondition</span><span class="p">)</span>
-<span class="ln">11</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Long Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">)</span>
-<span class="ln">12</span>
-<span class="ln">13</span><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
-<span class="ln">14</span><span class="k">if</span> <span class="p">(</span><span class="nx">shortCondition</span><span class="p">)</span>
-<span class="ln">15</span>    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Short Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">)</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c1">//@version=3
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1"></span><span class="nx">strategy</span><span class="p">(</span><span class="s2">&#34;내 전략&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line hl"><span class="ln"> 4</span><span class="cl"><span class="nx">sma14</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+</span></span><span class="line hl"><span class="ln"> 5</span><span class="cl"><span class="nx">sma28</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+</span></span><span class="line hl"><span class="ln"> 6</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line hl"><span class="ln"> 7</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">sma28</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">longCondition</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Long Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">long</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="nx">shortCondition</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    <span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;My Short Entry Id&#34;</span><span class="p">,</span> <span class="nx">strategy</span><span class="p">.</span><span class="kr">short</span><span class="p">)</span></span></span></code></pre></div>
 
 
 <figure  itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
@@ -592,8 +587,7 @@ if (!doNotTrack) {
 <h2 id="얼러트-설정방법">얼러트 설정방법</h2>
 <p>얼러트를 설정하기 위해서는 아래의 alertcondition 내장함수를 사용합니다.<br>
 <span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">alertcondition</span><span class="p">(</span><span class="nx">condition</span><span class="p">,</span> <span class="nx">title</span><span class="p">,</span> <span class="nx">message</span><span class="p">)</span>
-</code></pre></div></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">alertcondition</span><span class="p">(</span><span class="nx">condition</span><span class="p">,</span> <span class="nx">title</span><span class="p">,</span> <span class="nx">message</span><span class="p">)</span></span></span></code></pre></div></p>
 <div id="alert" class="alert alert-info">
     <h6 class="alert-heading">설명</h6>
     <ul>
@@ -605,20 +599,19 @@ if (!doNotTrack) {
 </div>
 그럼 위의 전략 스크립트를 활용하여 얼러트를 설정하여 보겠습니다.<br>
 <span class="text-primary">[Pine스크립트]</span>
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="ln"> 1</span><span class="c1">//@version=3
-</span><span class="ln"> 2</span><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;이평선 얼러트실행&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
-<span class="ln"> 3</span>
-<span class="ln"> 4</span><span class="nx">sma14</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
-<span class="ln"> 5</span><span class="nx">sma28</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
-<span class="ln"> 6</span><span class="nx">plot</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="ln"> 7</span><span class="nx">plot</span><span class="p">(</span><span class="nx">sma28</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="ln"> 8</span>
-<span class="ln"> 9</span><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
-<span class="hl"><span class="ln">10</span><span class="nx">alertcondition</span><span class="p">(</span><span class="nx">longCondition</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;Buy&#34;</span><span class="p">,</span> <span class="nx">message</span> <span class="o">=</span> <span class="s2">&#34;Buy Message!&#34;</span><span class="p">)</span>
-</span><span class="ln">11</span>
-<span class="ln">12</span><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
-<span class="hl"><span class="ln">13</span><span class="nx">alertcondition</span><span class="p">(</span><span class="nx">shortCondition</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;Sell&#34;</span><span class="p">,</span> <span class="nx">message</span> <span class="o">=</span> <span class="s2">&#34;Sell Message!&#34;</span><span class="p">)</span>
-</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="c1">//@version=3
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="c1"></span><span class="nx">study</span><span class="p">(</span><span class="s2">&#34;이평선 얼러트실행&#34;</span><span class="p">,</span> <span class="nx">overlay</span><span class="o">=</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="nx">sma14</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="nx">sma28</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="mi">28</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">sma28</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="nx">longCondition</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
+</span></span><span class="line hl"><span class="ln">10</span><span class="cl"><span class="nx">alertcondition</span><span class="p">(</span><span class="nx">longCondition</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;Buy&#34;</span><span class="p">,</span> <span class="nx">message</span> <span class="o">=</span> <span class="s2">&#34;Buy Message!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">
+</span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="nx">shortCondition</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">sma14</span><span class="p">,</span> <span class="nx">sma28</span><span class="p">)</span>
+</span></span><span class="line hl"><span class="ln">13</span><span class="cl"><span class="nx">alertcondition</span><span class="p">(</span><span class="nx">shortCondition</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;Sell&#34;</span><span class="p">,</span> <span class="nx">message</span> <span class="o">=</span> <span class="s2">&#34;Sell Message!&#34;</span><span class="p">)</span></span></span></code></pre></div>
 <p>위에서 변경된 코드를 살펴보면 두번째, 열번째,열세번째줄입니다.</p>
 <div id="alert" class="alert alert-info">
     <h6 class="alert-heading">설명</h6>

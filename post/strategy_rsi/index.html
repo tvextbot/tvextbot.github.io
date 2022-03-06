@@ -53,7 +53,7 @@
         "position": 3,
         "item": {
           "@id": "https:\/\/tvextbot.github.io\/post\/strategy_rsi\/",
-          "name": "전략 ( r s i)"
+          "name": "전략 ( rsi)"
         }
     }]
 }
@@ -116,7 +116,7 @@
   <meta name="twitter:site" content="@tvextbot" />
   <meta name="twitter:creator" content="@tvextbot" />
   <link href='https://tvextbot.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
-  <meta name="generator" content="Hugo 0.73.0" />
+  <meta name="generator" content="Hugo 0.93.0" />
   <link rel="alternate" href="https://tvextbot.github.io/index.xml" type="application/rss+xml" title="TVExtBot"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://tvextbot.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
@@ -336,7 +336,7 @@ if (!doNotTrack) {
                 <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;April 18, 2019에 게시됨
+  <i class="fas fa-calendar"></i>&nbsp;
   
   
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;분
@@ -377,7 +377,7 @@ if (!doNotTrack) {
 <p><span class="text-primary">[Pine스크립트]</span>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -409,37 +409,37 @@ if (!doNotTrack) {
 </span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="nx">strategy</span><span class="p">(</span><span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI전략샘플&#34;</span><span class="p">)</span>  
-<span class="c1">// rsi일수  
-</span><span class="c1"></span><span class="nx">rsiDays</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI일수&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>    
-<span class="c1">// 트레일링 스탑 일수  
-</span><span class="c1"></span><span class="nx">TSDays</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;TS일수&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>   
-<span class="c1">// 매수시 사용할 RSI값  
-</span><span class="c1"></span><span class="nx">EntryRSIValue</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI매수조건&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>   
-<span class="c1">// 매도시 사용할 RSI값  
-</span><span class="c1"></span><span class="nx">ExitRSIValue</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI매도조건&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">80</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>   
-  
-<span class="c1">// rsi계산  
-</span><span class="c1"></span><span class="nx">rs</span> <span class="o">=</span> <span class="nx">rsi</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="nx">rsiDays</span><span class="p">)</span>  
-<span class="nx">rsMA</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">rsiDays</span><span class="p">)</span>  
-<span class="c1">// rsi표시  
-</span><span class="c1"></span><span class="nx">plot</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">black</span><span class="p">)</span>  
-<span class="nx">plot</span><span class="p">(</span><span class="nx">rsMA</span><span class="p">,</span> <span class="nx">color</span> <span class="o">=</span> <span class="nx">gray</span><span class="p">)</span>  
-<span class="nx">hline</span><span class="p">(</span><span class="nx">EntryRSIValue</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">,</span> <span class="nx">linestyle</span><span class="o">=</span><span class="nx">dashed</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  
-<span class="nx">hline</span><span class="p">(</span><span class="nx">ExitRSIValue</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linestyle</span><span class="o">=</span><span class="nx">dashed</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  
-  
-<span class="c1">// rsi30이하의 지점에서 rsi가 rsiMA를 골든크로스할 경우 매수  
-</span><span class="c1"></span><span class="nx">isEntryPoint</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">rsMA</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">rs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">EntryRSIValue</span> <span class="nx">and</span> <span class="nx">rsMA</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">EntryRSIValue</span>  
-<span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">isEntryPoint</span><span class="p">)</span>  
-  
-<span class="c1">// 최저치 구하기  
-</span><span class="c1"></span><span class="nx">Lowest</span><span class="p">(</span><span class="nx">TSDays</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">ser</span> <span class="o">=</span> <span class="nx">lowest</span><span class="p">(</span><span class="nx">low</span><span class="p">,</span> <span class="nx">TSDays</span><span class="p">)</span>  
-<span class="nx">lowest</span> <span class="o">=</span> <span class="nx">Lowest</span><span class="p">(</span><span class="nx">TSDays</span><span class="p">)</span>  
-  
-<span class="c1">// rsi가70이상이면 익절　또는 트레일링 스탑에 걸리면 손절  
-</span><span class="c1"></span><span class="nx">isExitPoint</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">ExitRSIValue</span><span class="p">)</span> <span class="nx">or</span> <span class="p">(</span><span class="nx">low</span> <span class="o">==</span> <span class="nx">lowest</span><span class="p">)</span>  
-<span class="nx">strategy</span><span class="p">.</span><span class="nx">close</span><span class="p">(</span><span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">isExitPoint</span><span class="p">)</span>  
-</code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="nx">strategy</span><span class="p">(</span><span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI전략샘플&#34;</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="c1">// rsi일수  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">rsiDays</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI일수&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>    
+</span></span><span class="line"><span class="cl"><span class="c1">// 트레일링 스탑 일수  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">TSDays</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;TS일수&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>   
+</span></span><span class="line"><span class="cl"><span class="c1">// 매수시 사용할 RSI값  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">EntryRSIValue</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI매수조건&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>   
+</span></span><span class="line"><span class="cl"><span class="c1">// 매도시 사용할 RSI값  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">ExitRSIValue</span> <span class="o">=</span> <span class="nx">input</span><span class="p">(</span><span class="nx">type</span> <span class="o">=</span> <span class="nx">integer</span><span class="p">,</span> <span class="nx">title</span> <span class="o">=</span> <span class="s2">&#34;RSI매도조건&#34;</span><span class="p">,</span> <span class="nx">defval</span> <span class="o">=</span> <span class="mi">80</span><span class="p">,</span> <span class="nx">minval</span> <span class="o">=</span> <span class="mi">50</span><span class="p">,</span> <span class="nx">maxval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">,</span> <span class="nx">step</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>   
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1">// rsi계산  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">rs</span> <span class="o">=</span> <span class="nx">rsi</span><span class="p">(</span><span class="nx">close</span><span class="p">,</span> <span class="nx">rsiDays</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nx">rsMA</span> <span class="o">=</span> <span class="nx">sma</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">rsiDays</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="c1">// rsi표시  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">plot</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">black</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nx">plot</span><span class="p">(</span><span class="nx">rsMA</span><span class="p">,</span> <span class="nx">color</span> <span class="o">=</span> <span class="nx">gray</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nx">hline</span><span class="p">(</span><span class="nx">EntryRSIValue</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">blue</span><span class="p">,</span> <span class="nx">linestyle</span><span class="o">=</span><span class="nx">dashed</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nx">hline</span><span class="p">(</span><span class="nx">ExitRSIValue</span><span class="p">,</span> <span class="nx">color</span><span class="o">=</span><span class="nx">red</span><span class="p">,</span> <span class="nx">linestyle</span><span class="o">=</span><span class="nx">dashed</span><span class="p">,</span> <span class="nx">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1">// rsi30이하의 지점에서 rsi가 rsiMA를 골든크로스할 경우 매수  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">isEntryPoint</span> <span class="o">=</span> <span class="nx">crossover</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">rsMA</span><span class="p">)</span> <span class="nx">and</span> <span class="nx">rs</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">EntryRSIValue</span> <span class="nx">and</span> <span class="nx">rsMA</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nx">EntryRSIValue</span>  
+</span></span><span class="line"><span class="cl"><span class="nx">strategy</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">isEntryPoint</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1">// 최저치 구하기  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">Lowest</span><span class="p">(</span><span class="nx">TSDays</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="nx">ser</span> <span class="o">=</span> <span class="nx">lowest</span><span class="p">(</span><span class="nx">low</span><span class="p">,</span> <span class="nx">TSDays</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nx">lowest</span> <span class="o">=</span> <span class="nx">Lowest</span><span class="p">(</span><span class="nx">TSDays</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl"><span class="c1">// rsi가70이상이면 익절　또는 트레일링 스탑에 걸리면 손절  
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">isExitPoint</span> <span class="o">=</span> <span class="nx">crossunder</span><span class="p">(</span><span class="nx">rs</span><span class="p">,</span> <span class="nx">ExitRSIValue</span><span class="p">)</span> <span class="nx">or</span> <span class="p">(</span><span class="nx">low</span> <span class="o">==</span> <span class="nx">lowest</span><span class="p">)</span>  
+</span></span><span class="line"><span class="cl"><span class="nx">strategy</span><span class="p">.</span><span class="nx">close</span><span class="p">(</span><span class="s2">&#34;long&#34;</span><span class="p">,</span> <span class="nx">when</span> <span class="o">=</span> <span class="nx">isExitPoint</span><span class="p">)</span>  
+</span></span></code></pre></td></tr></table>
 </div>
 </div></p>
 
