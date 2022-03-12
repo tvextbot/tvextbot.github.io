@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>양방향 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%EC%96%91%EB%B0%A9%ED%96%A5/</link>
+    <description>Recent content in 양방향 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 06 Mar 2022 14:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%EC%96%91%EB%B0%A9%ED%96%A5/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>양방향 역지정매매 수동지표</title>
+      <link>https://tvextbot.github.io/posts/strategies/indicator_bo/</link>
+      <pubDate>Sun, 06 Mar 2022 14:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/indicator_bo/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;수렴 또는 횡보하는 차트에서 상방으로 이탈할때에는 매수하고 하방으로 이탈할때에는 매도하는 돌파매매를 할때 유용하게 사용할수 있는 지표를 만들어 보았습니다.&lt;br&gt;
+&lt;span class=&#34;text-primary&#34;&gt;&lt;i class=&#34;fa fa-info-circle&#34;&gt;&lt;/i&gt; 지표를 사용하고 싶으신분은 &lt;a class=&#34;text-default&#34; href=&#34;mailto:tvextbot@gmail.com&#34; target=&#34;_blank&#34;&gt;&lt;i class=&#34;fa fa-envelope&#34;&gt;&lt;/i&gt; 메일&lt;/a&gt;로 트레이딩뷰의 아이디와 함께 연락주시면 해당 스크립트를 공유해드리겠습니다.&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>바이낸스선물 양방향 포지션 설정법</title>
+      <link>https://tvextbot.github.io/posts/binance_dual_positions/</link>
+      <pubDate>Fri, 04 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/binance_dual_positions/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;바이낸스선물(Binance Futures)에서 롱과 숏 계약을 동시에 보유할 수 있는 양방향 포지션 모드가 추가되었습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>변동성 돌파 플러스 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%EB%B3%80%EB%8F%99%EC%84%B1-%EB%8F%8C%ED%8C%8C-%ED%94%8C%EB%9F%AC%EC%8A%A4/</link>
+    <description>Recent content in 변동성 돌파 플러스 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 07 Mar 2022 10:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%EB%B3%80%EB%8F%99%EC%84%B1-%EB%8F%8C%ED%8C%8C-%ED%94%8C%EB%9F%AC%EC%8A%A4/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>변동성 돌파 플러스 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/indicator_vbi_plus/</link>
+      <pubDate>Mon, 07 Mar 2022 10:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/indicator_vbi_plus/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;변동성 돌파 플러스 전략&lt;/strong&gt;&lt;/span&gt;은 일 단위로 수익을 실현하는 기존 변동성 돌파 기본 전략을 보완하여 상승 추세가 지속되는한 포지션을 유지하여 수익을 극대화 할수 있도록 수정한 매매 전략입니다.&lt;/p&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

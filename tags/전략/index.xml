@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>전략 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%EC%A0%84%EB%9E%B5/</link>
+    <description>Recent content in 전략 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 07 Mar 2022 17:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%EC%A0%84%EB%9E%B5/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>하이킨아시 업스윙 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/indicator_haus/</link>
+      <pubDate>Mon, 07 Mar 2022 17:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/indicator_haus/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;하이킨아시 업스윙 전략&lt;/strong&gt;&lt;/span&gt;은 하이킨아시를 활용하여 상승하는 추세를 따라가며 상승장에서만 수익을 실현하는 단기매매에 적합한 추세추종 전략입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 트렌드 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/indicator_vbt/</link>
+      <pubDate>Mon, 07 Mar 2022 14:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/indicator_vbt/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;변동성 돌파 트렌드 전략&lt;/strong&gt;&lt;/span&gt;은 변동성 돌파 기본 전략을 1시간봉과 2시간봉에 최적화하여 롱과 숏 양방향으로 매매가능하도록 수정한 단기 추세 전략입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 플러스 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/indicator_vbi_plus/</link>
+      <pubDate>Mon, 07 Mar 2022 10:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/indicator_vbi_plus/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;변동성 돌파 플러스 전략&lt;/strong&gt;&lt;/span&gt;은 일 단위로 수익을 실현하는 기존 변동성 돌파 기본 전략을 보완하여 상승 추세가 지속되는한 포지션을 유지하여 수익을 극대화 할수 있도록 수정한 매매 전략입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>변동성 돌파 기본 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/indicator_vbi/</link>
+      <pubDate>Mon, 07 Mar 2022 05:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/indicator_vbi/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;변동성 돌파 기본 전략&lt;/strong&gt;&lt;/span&gt;이란 전설적인 트레이더 래리 윌리엄스 (Larry R. Williams) 의 변동성 돌파 전략을 기본으로 개발한 전략입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>파인스크립트 전략을 사용하여 자동매매하는 방법</title>
+      <link>https://tvextbot.github.io/posts/strategies/strategy_alert/</link>
+      <pubDate>Sun, 06 Mar 2022 12:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/strategy_alert/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;파인스크립트의 전략(strategy)를 사용해서 자동매매하는 방법에 대한 내용입니다.&lt;br&gt;
+어느정도 파인스크립트에 대한 기본지식이 필요하니 &lt;a href=&#34;https://tvextbot.github.io/posts/strategies/pinescript&#34;&gt;파인스크립트 기초&lt;/a&gt; &lt;i class=&#34;fas fa-external-link-alt&#34;&gt;&lt;/i&gt; 를 참고해 주세요.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

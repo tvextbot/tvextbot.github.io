@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>자동매매 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%EC%9E%90%EB%8F%99%EB%A7%A4%EB%A7%A4/</link>
+    <description>Recent content in 자동매매 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 05 Mar 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%EC%9E%90%EB%8F%99%EB%A7%A4%EB%A7%A4/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>웹훅URL에 의한 자동매매</title>
+      <link>https://tvextbot.github.io/posts/webhook/</link>
+      <pubDate>Sat, 05 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/webhook/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;웹훅URL에 의한 자동매매란 컴퓨터를 껀 상태에서도 트레이딩뷰와 연동하여 자동매매가 가능한 새로운 기능입니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

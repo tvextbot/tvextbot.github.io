@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>기초 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%EA%B8%B0%EC%B4%88/</link>
+    <description>Recent content in 기초 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 06 Mar 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%EA%B8%B0%EC%B4%88/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>파인스크립트 기초(v5지원)</title>
+      <link>https://tvextbot.github.io/posts/strategies/pinescript/</link>
+      <pubDate>Sun, 06 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/pinescript/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;파인(Pine)스크립트란 트레이딩뷰 플랫폼상에서 실행가능한 스크립트이며 코딩하기 위해 Pine에디터를 제공하고 있습니다.&lt;br&gt;
+종류로는 지표와 전략 스크립트가 있으며 지표는 차트의 보조지수로 활용하고 전략은 백테스팅이 가능합니다.&lt;br&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

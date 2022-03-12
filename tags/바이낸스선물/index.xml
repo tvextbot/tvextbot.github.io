@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>바이낸스선물 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%EB%B0%94%EC%9D%B4%EB%82%B8%EC%8A%A4%EC%84%A0%EB%AC%BC/</link>
+    <description>Recent content in 바이낸스선물 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 04 Mar 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%EB%B0%94%EC%9D%B4%EB%82%B8%EC%8A%A4%EC%84%A0%EB%AC%BC/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>바이낸스선물 양방향 포지션 설정법</title>
+      <link>https://tvextbot.github.io/posts/binance_dual_positions/</link>
+      <pubDate>Fri, 04 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/binance_dual_positions/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;바이낸스선물(Binance Futures)에서 롱과 숏 계약을 동시에 보유할 수 있는 양방향 포지션 모드가 추가되었습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>
