@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>단축 주문메시지 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%EB%8B%A8%EC%B6%95-%EC%A3%BC%EB%AC%B8%EB%A9%94%EC%8B%9C%EC%A7%80/</link>
+    <description>Recent content in 단축 주문메시지 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 24 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%EB%8B%A8%EC%B6%95-%EC%A3%BC%EB%AC%B8%EB%A9%94%EC%8B%9C%EC%A7%80/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>단축 주문메시지 사용법</title>
+      <link>https://tvextbot.github.io/posts/shortmsg/</link>
+      <pubDate>Tue, 24 May 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/shortmsg/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;단축 주문메시지란 기존의 긴 주문메시지의 단점을 보완하기 위해 짧은 형태로 줄인 주문메시지를 말합니다.&lt;br&gt;&lt;br&gt;
+기존 주문메시지는 수정하면 트레이딩뷰의 얼러트를 다시 설정해야 하는 불편함이 있지만 단축 주문메시지는 주문ID와 연동되어 클라우드 서버에 저장되기 때문에 얼러트를 다시 설정할 필요가 없습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

@@ -5,7 +5,19 @@
     <link>https://tvextbot.github.io/categories/manual/</link>
     <description>Recent content in Manual on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Mar 2022 17:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Tue, 24 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/categories/manual/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>단축 주문메시지 사용법</title>
+      <link>https://tvextbot.github.io/posts/shortmsg/</link>
+      <pubDate>Tue, 24 May 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/shortmsg/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;단축 주문메시지란 기존의 긴 주문메시지의 단점을 보완하기 위해 짧은 형태로 줄인 주문메시지를 말합니다.&lt;br&gt;&lt;br&gt;
+기존 주문메시지는 수정하면 트레이딩뷰의 얼러트를 다시 설정해야 하는 불편함이 있지만 단축 주문메시지는 주문ID와 연동되어 클라우드 서버에 저장되기 때문에 얼러트를 다시 설정할 필요가 없습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
       <title>하이킨아시 업스윙 전략</title>
       <link>https://tvextbot.github.io/posts/strategies/indicator_haus/</link>
       <pubDate>Mon, 07 Mar 2022 17:06:25 +0600</pubDate>
