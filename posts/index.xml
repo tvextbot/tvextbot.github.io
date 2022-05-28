@@ -5,7 +5,7 @@
     <link>https://tvextbot.github.io/posts/</link>
     <description>Recent content in 사용자 매뉴얼 on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 24 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 27 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -16,6 +16,15 @@
     
     
     
+    
+    <item>
+      <title>그리드 현물매매 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/strategy_grid/</link>
+      <pubDate>Fri, 27 May 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/strategy_grid/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;그리드 현물매매 전략&lt;/strong&gt;&lt;/span&gt;은 미리 지정된 그리드 가격에서 하방 돌파시 분할 매수하고 상승 돌파시 분할 매도하는 박스권 횡보 장세에 유리한 전략입니다.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>단축 주문메시지 사용법</title>
