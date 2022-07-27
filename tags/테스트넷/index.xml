@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>테스트넷 on TVExtBot</title>
+    <link>https://tvextbot.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%84%B7/</link>
+    <description>Recent content in 테스트넷 on TVExtBot</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 27 Jul 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/%ED%85%8C%EC%8A%A4%ED%8A%B8%EB%84%B7/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>바이빗 테스트넷 사용법</title>
+      <link>https://tvextbot.github.io/posts/testnet/</link>
+      <pubDate>Wed, 27 Jul 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/testnet/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;바이빗 테스트넷 사용법에 대해서 설명해 드리겠습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    
+  </channel>
+</rss>

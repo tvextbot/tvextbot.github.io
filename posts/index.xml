@@ -5,7 +5,7 @@
     <link>https://tvextbot.github.io/posts/</link>
     <description>Recent content in 사용자 매뉴얼 on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 25 Jul 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Jul 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -16,6 +16,17 @@
     
     
     
+    
+    <item>
+      <title>바이빗 테스트넷 사용법</title>
+      <link>https://tvextbot.github.io/posts/testnet/</link>
+      <pubDate>Wed, 27 Jul 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/testnet/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;바이빗 테스트넷 사용법에 대해서 설명해 드리겠습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>텔레그램 비공개 채널 알림봇 사용법</title>
