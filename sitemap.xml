@@ -99,24 +99,33 @@
     <priority>0.1</priority>
   </url><url>
     <loc>https://tvextbot.github.io/categories/</loc>
-    <lastmod>2022-05-27T08:06:25+06:00</lastmod>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
   </url><url>
     <loc>https://tvextbot.github.io/categories/manual/</loc>
-    <lastmod>2022-05-27T08:06:25+06:00</lastmod>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
   </url><url>
     <loc>https://tvextbot.github.io/tags/</loc>
-    <lastmod>2022-05-27T08:06:25+06:00</lastmod>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
   </url><url>
     <loc>https://tvextbot.github.io/</loc>
-    <lastmod>2022-05-27T08:06:25+06:00</lastmod>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
+  </url><url>
+    <loc>https://tvextbot.github.io/posts/</loc>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
+  </url><url>
+    <loc>https://tvextbot.github.io/tags/%EC%B1%84%EB%84%90/</loc>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
+  </url><url>
+    <loc>https://tvextbot.github.io/tags/%ED%85%94%EB%A0%88%EA%B7%B8%EB%9E%A8/</loc>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
+  </url><url>
+    <loc>https://tvextbot.github.io/posts/channel/</loc>
+    <lastmod>2022-07-25T08:06:25+06:00</lastmod>
   </url><url>
     <loc>https://tvextbot.github.io/tags/%EA%B7%B8%EB%A6%AC%EB%93%9C/</loc>
     <lastmod>2022-05-27T08:06:25+06:00</lastmod>
   </url><url>
     <loc>https://tvextbot.github.io/posts/strategies/strategy_grid/</loc>
-    <lastmod>2022-05-27T08:06:25+06:00</lastmod>
-  </url><url>
-    <loc>https://tvextbot.github.io/posts/</loc>
     <lastmod>2022-05-27T08:06:25+06:00</lastmod>
   </url><url>
     <loc>https://tvextbot.github.io/tags/%EC%A0%84%EB%9E%B5/</loc>

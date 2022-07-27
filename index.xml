@@ -5,7 +5,7 @@
     <link>https://tvextbot.github.io/</link>
     <description>Recent content on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jul 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     
@@ -28,6 +28,17 @@
     
     
     
+    
+    <item>
+      <title>텔레그램 비공개 채널 알림봇 사용법</title>
+      <link>https://tvextbot.github.io/posts/channel/</link>
+      <pubDate>Mon, 25 Jul 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/channel/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;텔레그램 비공개 채널로 채널 맴버 전원에게 TVExtBot에서 실행된 &lt;span class=&#34;text-success&#34;&gt;자동매매와 에러정보를 실시간&lt;/span&gt;으로 받아 볼수 있습니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
     
     <item>
       <title>그리드 현물매매 전략</title>
@@ -200,7 +211,7 @@
       
       <guid>https://tvextbot.github.io/posts/telegram/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;TVExtBot에서 실행된 &lt;span class=&#34;text-success&#34;&gt;자동매매와 에러정보를 실시간&lt;/span&gt;으로 받아 볼수 있는 &lt;span class=&#34;text-primary&#34;&gt;&lt;i class=&#34;fab fa-telegram&#34;&gt;&lt;/i&gt; 텔레그램 알림봇 서비스&lt;/span&gt;를 추가하였습니다.&lt;br&gt;
+&lt;p&gt;TVExtBot에서 실행된 &lt;span class=&#34;text-success&#34;&gt;자동매매와 에러정보를 실시간&lt;/span&gt;으로 받아 볼수 있는 &lt;span class=&#34;text-primary&#34;&gt;&lt;i class=&#34;fab fa-telegram&#34;&gt;&lt;/i&gt; 텔레그램 알림봇 서비스&lt;/span&gt;입니다.&lt;br&gt;
 앞으로는 외출중에도 TVExtBot에서 자동매매되는 주문정보와 에러정보를 실시간으로 받아 보실수 있습니다.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
