@@ -458,3 +458,73 @@ mark {
     font-size: 1.5rem;
   }
 }
+
+.stepbar {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.stepbar .stepbarwrap {
+  margin: 2em 0;
+  position: relative;
+}
+
+.stepbar .stepbarwrap .steptitle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.stepbar .stepbarwrap .steptitle .stepcircle {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  content: "";
+  border-radius: 50%;
+  background-color: #32cd32;
+  color: #fff;
+  text-align: center;
+  z-index: 2;
+}
+
+.stepbar .stepbarwrap .steptitle .stepcircle span {
+  display: inline-block;
+  line-height: 1.2em;
+  font-size: 0.8em;
+  font-weight: bold;
+  position: relative;
+  top: 0.9em;
+}
+
+.stepbar .stepbarwrap .steptitle .title {
+  margin: 0.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.stepbar .stepbarwrap .steptxt {
+  padding-left: 3.5em;
+}
+
+.stepbar .stepbarwrap .steptxt .txt {
+  font-size: 0.9em;
+}
+
+.stepbar .stepbarwrap .stepline {
+  width: 1px;
+  height: calc(100% + 1em);
+  background-color: #32cd32;
+  position: absolute;
+  top: 1em;
+  left: 1.5em;
+  z-index: 1;
+}
+
+.stepbarwrap:last-of-type .stepline:last-of-type {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .stepbar {
+    width: 90%;
+  }
+}

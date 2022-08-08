@@ -410,6 +410,78 @@ if (!doNotTrack) {
         <li>위의 내용에 대해서 동의하는 경우에만 TVExtBot를 사용해 주시길 바랍니다.</li>
     </ul>
 </div>
+<h3 id="tvextbot-간단-사용법-요약">TVExtBot 간단 사용법 요약</h3>
+<p>처음 사용하시는분은 반드시 아래의 순서대로 진행해 주세요.</p>
+<div class="stepbar">
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>1</span></div>
+            <p class="title">크롬확장프로그램 설치</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">크롬 웹 스토어에서 TVExtBot <a href="https://chrome.google.com/webstore/detail/tvextbot/ocbdbfgioaohinjejhibklaoikhlodne" target="_blank">확장프로그램 <i class="fas fa-external-link-square-alt"></i></a>을 설치해 주세요.</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>2</span></div>
+            <p class="title">인증키 발급 & 등록</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">
+                무료인증키는 바이낸스현물,테스트넷에 한해서 한달간 무료로 사용가능합니다. <a href="#인증키-발급--등록"><i class="fas fa-angle-double-down"></i></a><br>
+                유료인증키 구매는 <a href="/posts/authguide" target="_blank">인증키 등록&구매가이드 <i class="fas fa-external-link-square-alt"></i></a> 를 참고해 주세요.<br>
+                계좌이체로 구매하실 경우 <a class="text-muted" href="mailto:tvextbot@gmail.com"><i class="fa fa-envelope"></i> 메일</a> 또는 <a class="text-muted" href="https://t.me/bkson55"><i class="fab fa-telegram"></i> 텔레그램</a>으로 문의해 주세요.</span>
+            </span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>3</span></div>
+            <p class="title">거래소 API키 등록</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">사용가능한 거래소와 거래소 API 발급은 <a href="/posts/api" target="_blank">거래소 API 발급 방법 <i class="fas fa-external-link-square-alt"></i></a> 를 참고해 주세요.</span><br>
+            <span class="small text-danger">※ API키 발급시 고정IP 등록이 필요할 경우 본인의 API키 등록화면에 있는 IP주소 3개를 꼭 등록해 주세요.</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>4</span></div>
+            <p class="title">텔레그램 알림봇 설정</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">
+                외출중에도 TVExtBot에서 자동매매되는 주문정보와 에러정보를 실시간으로 받아볼수 있습니다.<br>
+                자세한 사용법은 <a href="/posts/api" target="_blank">텔레그램 개인 알림봇 사용법 <i class="fas fa-external-link-square-alt"></i></a>을 참고해 주세요.
+            </span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>5</span></div>
+            <p class="title">주문메시지 작성</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">자세한 내용은 아래의 <i class="fas fa-angle-double-down"></i> <a href="#주문메시지-작성">주문메시지 작성</a> 편을 참고해 주세요.</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+    <div class="stepbarwrap">
+        <div class="steptitle">
+            <div class="stepcircle"><span>STEP<br>6</span></div>
+            <p class="title">트레이딩뷰 얼러트 설정</p>
+        </div>
+        <div class="steptxt">
+            <span class="txt">자세한 내용은 아래의 <i class="fas fa-angle-double-down"></i> <a href="#트레이딩뷰-얼러트-설정">트레이딩뷰 얼러트 설정</a> 편을 참고해 주세요.</span>
+        </div>
+        <span class="stepline"></span>
+    </div>
+</div>
 <h3 id="크롬확장프로그램-설치">크롬확장프로그램 설치</h3>
 <p>1.크롬 웹 스토어에서 TVExtBot를 검색한 후 [크롬에 추가] 버튼을 클릭하여 자신의 크롬브라우저에 설치하여 주세요.
 <a class="btn btn-info" role="button" aria-pressed="true" href="https://chrome.google.com/webstore/detail/tvextbot/ocbdbfgioaohinjejhibklaoikhlodne" target="_blank"><i class="fab fa-chrome"></i> chrome 웹 스토어로 바로가기</a>
@@ -428,15 +500,22 @@ if (!doNotTrack) {
 <figure><img src="images/main_options.png"/>
 </figure>
 </p>
-<p>5.인증키 등록화면에서 인증키를 구매하여 등록해 주세요.<br></p>
+<h3 id="인증키-발급--등록">인증키 발급 &amp; 등록</h3>
+<p>5.인증키 등록화면에서 무료 인증키 또는 유료인증키를 구매하여 인증키를 등록합니다.<br></p>
 <blockquote>
-<p>※ 자세한 내용은 <i class="fab fa-bitcoin"></i> <a href="/posts/authguide">인증키 등록&amp;구매가이드</a> 를 참고해 주세요.<br>
+<p>※ 유료 인증키 구매에 대한 자세한 내용은 <i class="fab fa-bitcoin"></i> <a href="/posts/authguide">인증키 등록&amp;구매가이드</a> 를 참고해 주세요.<br>
+<span class="text-primary"><i class="fas fa-hand-point-right"></i> 은행계좌이체로 송금을 원하실 경우에는 <a class="text-muted" href="mailto:tvextbot@gmail.com"><i class="fa fa-envelope"></i> 메일</a> 또는 <a class="text-muted" href="https://t.me/bkson55"><i class="fab fa-telegram"></i> 텔레그램</a>으로 문의해 주세요.</span><br>
 <i class="fas fa-info-circle"></i> 무료 인증키를 발행하여 등록하면 바이낸스현물, 테스트넷에 한해서 한달간 무료로 사용가능합니다.</p>
 </blockquote>
-<figure><img src="images/register_authkey.png"/>
+<p><figure><img src="images/register_authkey.png"/>
 </figure>
 
-<h3 id="api키-등록">API키 등록</h3>
+<br></p>
+<p>6.발급 받을때 사용한 이메일과 인증키를 복사하여 아래와 같이 붙여쓰기를 한후 인증하기를 클릭합니다.
+<figure><img src="images/completed_authkey.png"/>
+</figure>
+</p>
+<h3 id="거래소-api키-등록">거래소 API키 등록</h3>
 <div id="alert" class="alert alert-info">
 <h5 class="alert-heading"><i class="fa fa-rocket"></i> 현재 TVExtBot내에서 사용가능한 거래소</h5>
     <ul class="small">
@@ -461,12 +540,12 @@ if (!doNotTrack) {
 　<span class="text-danger small"><i class="fas fa-hand-point-right"></i> API키 발급시 고정IP 등록이 필요할 경우 본인의 API키 등록화면에 있는 IP주소를 꼭 등록해 주세요.</span><br>
 　<span class="text-danger small"><i class="fas fa-hand-point-right"></i> 웹훅URL과 IP주소는 사용하시는 버전에 따라 다릅니다. 꼭 본인의 확장프로그램 설정화면에 있는 웹훅URL과 IP주소를 사용해 주세요.</span><br></p>
 </blockquote>
-<p>8.API키 등록화면에서 [편집]버튼을 클릭 후 거래소의 API키와 비밀키를 입력하여 [저장]버튼을 클릭해 주세요.</p>
+<p>7.API키 등록화면에서 [편집]버튼을 클릭 후 거래소의 API키와 비밀키를 입력하여 [저장]버튼을 클릭해 주세요.</p>
 <figure><img src="images/api_key.png"/>
 </figure>
 
 <p><span class="text-danger">※ 유료거래소의 락을 해제하기 위해 인증키를 구입하세요. [ <i class="fab fa-bitcoin"></i> <a href="/posts/authguide">인증키 등록&amp;구매가이드</a> ]</span></p>
-<p>9.거래소 연결에 성공하면 아래와 같은 연결성공 메시지와 함께 [연결중]버튼으로 바뀌는 것을 확인할 수 있습니다.
+<p>8.거래소 연결에 성공하면 아래와 같은 연결성공 메시지와 함께 [연결중]버튼으로 바뀌는 것을 확인할 수 있습니다.
 <figure><img src="images/success_apikey.png"/>
 </figure>
 </p>
@@ -477,6 +556,14 @@ if (!doNotTrack) {
 <blockquote>
 <p><i class="fas fa-hand-point-right"></i> API키는 각 거래소당 최대 5개까지 등록이 가능합니다.</p>
 </blockquote>
+<h3 id="텔레그램-알림봇-설정">텔레그램 알림봇 설정</h3>
+<p>9.주문결과와 에러정보를 실시간으로 알림 메시지를 받아 볼수 있는 텔레그램 알림봇을 설정합니다. <span class="text-danger"><i class="fas fa-info-circle"></i> 반드시 설정해 두세요.</span></p>
+<blockquote>
+<p>※ 자세한 내용은 <i class="fab fa-telegram"></i> <a href="/posts/telegram">텔레그램 개인 알림봇 사용법</a> 를 참고해 주세요.</p>
+</blockquote>
+<figure><img src="images/telegram.png"/>
+</figure>
+
 <h3 id="주문메시지-작성">주문메시지 작성</h3>
 <blockquote>
 <p><span class="text-default">주문메시지에는 <span class="text-danger">기존 사용해온 긴 주문메시지</span>와 새로추가된 <span class="text-danger">단축 주문메시지</span> 2종류가 있습니다.(※얼러트 설정방법은 동일)<br>
@@ -499,7 +586,7 @@ if (!doNotTrack) {
 </div>
 <p><span class="text-primary"><i class="fas fa-hand-point-right"></i> 공개지표인 슈퍼트랜드지표를 이용하여 롱시그널 발생시 청산→매수, 숏시그널 발생시 청산→매도를 예로 설명하겠습니다.</span><br>
 <span class="text-primary"><i class="fas fa-hand-point-right"></i> 아래의 설명은 기존 사용해온 긴 주문메시지를 사용한 예입니다만 단축 주문메시지로 변경해서 사용해도 무방합니다.</span></p>
-<p>12.메시지 작성화면에서 트레이딩뷰의 얼러트에 설정할 주문 메시지를 매수, 매도, 청산순으로 작성합니다.<br></p>
+<p>10.메시지 작성화면에서 트레이딩뷰의 얼러트에 설정할 주문 메시지를 매수, 매도, 청산순으로 작성합니다.<br></p>
 <p><span class="text-danger"><i class="fas fa-exclamation-triangle"></i> 주문 메시지는 반드시 메시지 작성화면을 통해 작성하여 주세요!</span><span class="text-danger"></span></p>
 <div id="alert" class="alert alert-info">
 <h6 class="alert-heading">예) 아래의 내용을 입력 (매수용 주문 메시지)</h6>
@@ -558,22 +645,22 @@ if (!doNotTrack) {
 </p>
 <p><i class="fas fa-hand-point-right"></i> 청산메시지 출력결과
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;market&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;close&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;토큰정보&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span></span></span></code></pre></div></p>
-<h3 id="트레이딩-뷰에-얼러트-추가">트레이딩 뷰에 얼러트 추가</h3>
+<h3 id="트레이딩뷰-얼러트-설정">트레이딩뷰 얼러트 설정</h3>
 <blockquote>
 <p><span class="text-primary"><i class="fas fa-info-circle"></i> 웹훅URL은 등록하신 인증키의 버전에 따라 다릅니다.얼러트의 웹훅URL 설정시 주의하여 주세요.</span><br>
 <span class="text-danger small">※ 본인의 인증키 버전과 다른 웹훅URL을 사용하면 주문에러가 발생하니 주문메시지 작성화면에 있는 웹훅URL을 꼭 사용해 주세요.</span><br>
 <span class="text-danger small">※ 트라이얼 버전은 인증키 등록화면에 있는 [무료인증키 발행하기] 링크를 통해 무료로 발행할 수 있습니다.</span></p>
 </blockquote>
-<p>10.Bybit의 BTCUSD 차트를 선택하여 슈퍼트랜드지표를 불러옵니다.<br>
+<p>11.Bybit의 BTCUSD 차트를 선택하여 슈퍼트랜드지표를 불러옵니다.<br>
 <span class="text-danger small"><i class="fas fa-hand-point-right"></i> 슈퍼트랜드지표는 테스트용 지표입니다. 실거래에는 사용하지 마세요.</span>
 <figure><img src="images/bybit_chart.png"/>
 </figure>
 </p>
-<p>11.1시간봉 기준으로 아래의 long시그널 발생시 청산→매수 short시그널 발생시 청산→매도를 설정하겠습니다.
+<p>12.1시간봉 기준으로 아래의 long시그널 발생시 청산→매수 short시그널 발생시 청산→매도를 설정하겠습니다.
 <figure><img src="images/supertrend.png"/>
 </figure>
 </p>
-<p>12.얼러트추가[+]버튼을 클릭하여 조건에 SuperTrend와 Buy를 옵션에서 [봉닫힐때 한번]을 선택한후 메시지란에 청산과 매수 메시지를 복사&amp;붙여쓰기를 합니다.<br></p>
+<p>13.얼러트추가[+]버튼을 클릭하여 조건에 SuperTrend와 Buy를 옵션에서 [봉닫힐때 한번]을 선택한후 메시지란에 청산과 매수 메시지를 복사&amp;붙여쓰기를 합니다.<br></p>
 <blockquote>
 <p><span class="text-danger">※ 웹훅URL은 본인의 주문메시지 작성화면에 있는 웹훅URL을 복사하여 붙여쓰기 해주세요.</span></p>
 </blockquote>
@@ -585,7 +672,7 @@ if (!doNotTrack) {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;market&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;close&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;토큰정보&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;limit&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;buy&#34;</span>,<span style="color:#e6db74">&#34;bal_pct&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">30</span>,<span style="color:#e6db74">&#34;price&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;last&#34;</span>,<span style="color:#e6db74">&#34;leverage&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;토큰정보&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span></span></span></code></pre></div>
 <br>
-13.얼러트추가[+]버튼을 클릭하여 조건에 SuperTrend와 Sell를 옵션에서 [봉닫힐때 한번]을 선택한후 메시지란에 청산과 매도 메시지를 복사&amp;붙여쓰기를 합니다.</p>
+14.얼러트추가[+]버튼을 클릭하여 조건에 SuperTrend와 Sell를 옵션에서 [봉닫힐때 한번]을 선택한후 메시지란에 청산과 매도 메시지를 복사&amp;붙여쓰기를 합니다.</p>
 <blockquote>
 <p><span class="text-danger">※ 웹훅URL은 본인의 주문메시지 작성화면에 있는 웹훅URL을 복사하여 붙여쓰기 해주세요.</span></p>
 </blockquote>
@@ -596,11 +683,11 @@ if (!doNotTrack) {
 <p><i class="fas fa-hand-point-right"></i> 매도용 얼러트 메시지란 설정내용 <span class="text-danger">(여러개의 주문메시지 설정가능)</span>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;market&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;close&#34;</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;토큰정보&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span>
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">TVM</span><span style="color:#f92672">:</span>{<span style="color:#e6db74">&#34;exchange&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;bybit&#34;</span>,<span style="color:#e6db74">&#34;account&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;*&#34;</span>,<span style="color:#e6db74">&#34;symbol&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;BTC/USD&#34;</span>,<span style="color:#e6db74">&#34;type&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;limit&#34;</span>,<span style="color:#e6db74">&#34;side&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;sell&#34;</span>,<span style="color:#e6db74">&#34;bal_pct&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">30</span>,<span style="color:#e6db74">&#34;price&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;last&#34;</span>,<span style="color:#e6db74">&#34;leverage&#34;</span><span style="color:#f92672">:</span><span style="color:#ae81ff">1</span>,<span style="color:#e6db74">&#34;token&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;토큰정보&#34;</span>}<span style="color:#f92672">:</span><span style="color:#a6e22e">MVT</span></span></span></code></pre></div></p>
-<p>14.아래와 같이 얼러트가 추가된것을 확인할 수 있습니다.
+<p>15.아래와 같이 얼러트가 추가된것을 확인할 수 있습니다.
 <figure><img src="images/completed_alert.png"/>
 </figure>
 </p>
-<p>15.설정은 여기까지 입니다. 다음은 TVExtBot가 설정한 주문메시지를 통해 자동매매를 실행합니다.<br></p>
+<p>16.설정은 여기까지 입니다. 다음은 TVExtBot가 설정한 주문메시지를 통해 자동매매를 실행합니다.<br></p>
 <div id="alert" class="alert alert-success">
 <h5 class="alert-heading"><i class="fas fa-hourglass-start"></i> 참고사이트</h5>
 높은 승률로 자동매매를 하기위해서는 보다 더 정교한 알고리즘으로 자신만의 전략을 개발하기를 추천합니다.<br>
@@ -751,10 +838,13 @@ if (!doNotTrack) {
   <ul>
     <li>
       <ul>
+        <li><a href="#tvextbot-간단-사용법-요약">TVExtBot 간단 사용법 요약</a></li>
         <li><a href="#크롬확장프로그램-설치">크롬확장프로그램 설치</a></li>
-        <li><a href="#api키-등록">API키 등록</a></li>
+        <li><a href="#인증키-발급--등록">인증키 발급 &amp; 등록</a></li>
+        <li><a href="#거래소-api키-등록">거래소 API키 등록</a></li>
+        <li><a href="#텔레그램-알림봇-설정">텔레그램 알림봇 설정</a></li>
         <li><a href="#주문메시지-작성">주문메시지 작성</a></li>
-        <li><a href="#트레이딩-뷰에-얼러트-추가">트레이딩 뷰에 얼러트 추가</a></li>
+        <li><a href="#트레이딩뷰-얼러트-설정">트레이딩뷰 얼러트 설정</a></li>
       </ul>
     </li>
   </ul>
