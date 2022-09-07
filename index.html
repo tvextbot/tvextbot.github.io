@@ -550,7 +550,7 @@ if (!doNotTrack) {
               <h5 class="card-title text-primary text-uppercase text-center">STANDARD</h5>
               <div class="row d-flex align-items-end">
                 <div class="col-md-12 text-center">
-                  <span id="standardPrice" class="text-center" style="font-size: 2rem;margin: 0;">20만원</span>/
+                  <span id="standardPrice" class="text-center" style="font-size: 2rem;margin: 0;">24만원</span>/
                   <select name="selStandardPeriod" class="border-default text-default">
                     <option value="1year">1년</option>
                     <option value="6month">6개월</option>
@@ -563,7 +563,7 @@ if (!doNotTrack) {
                 <li><span class="fa-li"><i class="fas fa-check"></i></span>주문메시지 저장기능</li>
                 <li><span class="fa-li"><i class="fas fa-check"></i></span>텔레그램 알림봇 서비스</li>
                 <li><span class="fa-li"><i class="fas fa-check"></i></span>웹훅URL에 의한 자동매매</li>
-                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_haus/" target="_blank">하이킨아시 업스윙 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_haus/" target="_blank">하이킨아시 업스윙 전략 제공 <i class="fas fa-external-link-square-alt"></i></a></li>
                 <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 기본 전략 제공</li>
                 <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 플러스 전략 제공</li>
                 <li class="text-muted"><span class="fa-li"><i class="fas fa-times"></i></span>변동성 돌파 트렌드 전략 제공</li>
@@ -580,7 +580,7 @@ if (!doNotTrack) {
               <div class="row d-flex align-items-end">
                 <div class="col-md-12 text-center">
                   
-                  <span id="expertPrice" class="text-center" style="font-size: 2rem;margin: 0;">40만원</span>/
+                  <span id="expertPrice" class="text-center" style="font-size: 2rem;margin: 0;">42만원</span>/
                   <select name="selExpertPeriod" class="border-default text-default">
                     <option value="1year">1년</option>
                     <option value="6month">6개월</option>
@@ -593,10 +593,10 @@ if (!doNotTrack) {
                 <li><span class="fa-li"><i class="fas fa-check"></i></span>주문메시지 저장기능</li>
                 <li><span class="fa-li"><i class="fas fa-check"></i></span>텔레그램 알림봇 서비스</li>
                 <li><span class="fa-li"><i class="fas fa-check"></i></span>웹훅URL에 의한 자동매매</li>
-                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_haus/" target="_blank">하이킨아시 업스윙 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
-                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbi/" target="_blank">변동성 돌파 기본 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
-                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbi_plus/" target="_blank">변동성 돌파 플러스 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
-                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbt/" target="_blank">변동성 돌파 트렌드 전략 제공 <i class="fas fa-external-link-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_haus/" target="_blank">하이킨아시 업스윙 전략 제공 <i class="fas fa-external-link-square-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbi/" target="_blank">변동성 돌파 기본 전략 제공 <i class="fas fa-external-link-square-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbi_plus/" target="_blank">변동성 돌파 플러스 전략 제공 <i class="fas fa-external-link-square-alt"></i></a></li>
+                <li><span class="fa-li"><i class="fas fa-check"></i></span><a class="text-default" style="text-decoration:none;" href="https://tvextbot.github.io/posts/strategies/indicator_vbt/" target="_blank">변동성 돌파 트렌드 전략 제공 <i class="fas fa-external-link-square-alt"></i></a></li>
               </ul>
             </div>
           </div>
@@ -863,15 +863,15 @@ if (!doNotTrack) {
     $(document).on("change", "select[name=selStandardPeriod]",function(e) {
         var period = $(this).val();
         if (period === '1year') {
-            $('#standardPrice').text('20만원');
+            $('#standardPrice').text('24만원');
         } else if (period === '6month') {
-            $('#standardPrice').text('14만원');
+            $('#standardPrice').text('16만원');
         }    
     });  
     $(document).on("change", "select[name=selExpertPeriod]",function(e) {
         var period = $(this).val();
         if (period === '1year') {
-            $('#expertPrice').text('40만원');
+            $('#expertPrice').text('42만원');
         } else if (period === '6month') {
             $('#expertPrice').text('28만원');
         }    
