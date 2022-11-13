@@ -151,12 +151,12 @@
       <guid>https://tvextbot.github.io/posts/referral/</guid>
       <description>&lt;p&gt;각종 거래소의 수수료할인 링크입니다.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;MEXC&lt;/li&gt;
-&lt;li&gt;비트겟&lt;/li&gt;
-&lt;li&gt;FTX&lt;/li&gt;
-&lt;li&gt;바이빗&lt;/li&gt;
+&lt;!-- &lt;li&gt;FTX&lt;/li&gt; --&gt;
 &lt;li&gt;바이낸스&lt;/li&gt;
+&lt;li&gt;바이빗&lt;/li&gt;
+&lt;li&gt;비트겟&lt;/li&gt;
 &lt;li&gt;Phemex&lt;/li&gt;
+&lt;li&gt;MEXC&lt;/li&gt;
 &lt;/ul&gt;</description>
     </item>
     
