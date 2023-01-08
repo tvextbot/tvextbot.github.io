@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>토레스 전략</title>
+    <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta http-equiv="Cache-Control" content="no-cache">
+
+
+<link rel="stylesheet" href="/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="/css/layouts/main.css"/>
+<link rel="stylesheet" href="/css/navigators/navbar.css"/>
+<link rel="stylesheet" href="/css/plyr.css"/>
+<link rel="stylesheet" href="/css/flag-icon.min.css"/>
+<link rel="stylesheet" href="/css/katex.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;600">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+
+
+
+
+  
+
+  
+  
+  
+    
+  
+  
+
+  <link rel="icon" type="image/png" href="/images/favicon_hu570fab3683a7dba6a5302da9752d87d9_24921_42x0_resize_box_3.png" />
+
+<meta property="og:title" content="토레스 전략" />
+<meta property="og:description" content="토레스 전략" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://tvextbot.github.io/posts/strategies/community/indicator_torres/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-01-08T10:06:25+06:00" />
+<meta property="article:modified_time" content="2023-01-08T10:06:25+06:00" />
+
+
+
+    
+    
+<meta name="description" content="토레스 전략" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/atom-one-dark.min.css"
+/>
+<link rel="stylesheet" href="/css/layouts/single.css"/>
+<link rel="stylesheet" href="/css/navigators/sidebar.css">
+
+<link rel="stylesheet" href="/css/style.css"/>
+
+
+
+    
+    
+        
+        
+          
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-136222945-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+        
+    
+  </head>
+
+  <body data-spy="scroll" data-target="#TableOfContents" data-offset="80">
+    <div class="container-fluid bg-dimmed wrapper">
+      
+      
+    
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+  
+  
+    
+  
+  
+
+
+<nav class="navbar navbar-expand-xl top-navbar final-navbar shadow">
+  <div class="container">
+      <button class="navbar-toggler navbar-light" id="sidebar-toggler" type="button" onclick="toggleSidebar()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="/">
+      
+        <img src="/images/main-logo_hu7962c8f4117a70956be5db6c3f05e9b5_22536_42x0_resize_box_3.png" alt="Logo">
+      TVExtBot</a>
+    <button class="navbar-toggler navbar-light" id="toc-toggler" type="button" onclick="toggleTOC()">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse lang-selector" id="top-nav-items">
+      <ul class="navbar-nav ml-auto">
+      
+      </ul>
+    </div>
+  </div>
+  
+  
+    <img src="/images/main-logo_hu7962c8f4117a70956be5db6c3f05e9b5_22536_42x0_resize_box_3.png" class="d-none" id="main-logo" alt="Logo">
+  
+  
+    <img src="/images/inverted-logo_hu95eb2d64a4ea5f832fb8ffe15d66f1ae_20428_42x0_resize_box_3.png" class="d-none" id="inverted-logo" alt="Inverted Logo">
+  
+</nav>
+
+
+
+      
+      
+  <section class="sidebar-section" id="sidebar-section">
+    <div class="sidebar-holder">
+      <div class="sidebar" id="sidebar">
+        <form class="mx-auto" method="get" action="/search">
+          <input type="text" name="keyword" value="" placeholder="검색" data-search="" id="search-box" />
+        </form>
+        <div class="sidebar-tree">
+          <ul class="tree" id="tree">
+            <li id="list-heading"><a href="/posts" data-filter="all">매뉴얼</a></li>
+            <div class="subtree">
+                
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/first/" title="시작하기">시작하기</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/authguide/" title="인증키 등록&amp;구매가이드">인증키 등록&amp;구매가이드</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/webhook/" title="웹훅URL에 의한 자동매매">웹훅URL에 의한 자동매매</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/telegram/" title="텔레그램 개인 알림봇 사용법">텔레그램 개인 알림봇 사용법</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/channel/" title="텔레그램 비공개 채널 알림봇 사용법">텔레그램 비공개 채널 알림봇 사용법</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/binance_dual_positions/" title="바이낸스선물 양방향 포지션 설정법">바이낸스선물 양방향 포지션 설정법</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/referral/" title="거래소 수수료 할인링크">거래소 수수료 할인링크</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/update_chrome/" title="크롬확장프로그램 수동업데이트 방법">크롬확장프로그램 수동업데이트 방법</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/api/" title="거래소 API 발급 방법">거래소 API 발급 방법</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/shortmsg/" title="단축 주문메시지 사용법">단축 주문메시지 사용법</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/testnet/" title="바이빗 테스트넷 사용법">바이빗 테스트넷 사용법</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/strategies/">전략</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/pinescript/" title="파인스크립트 기초(v5지원)">파인스크립트 기초(v5지원)</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/strategy_alert/" title="파인스크립트 전략을 사용하여 자동매매하는 방법">파인스크립트 전략을 사용하여 자동매매하는 방법</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/indicator_bo/" title="양방향 역지정매매 수동지표">양방향 역지정매매 수동지표</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/indicator_vbi/" title="변동성 돌파 기본 전략">변동성 돌파 기본 전략</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/indicator_vbi_plus/" title="변동성 돌파 플러스 전략">변동성 돌파 플러스 전략</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/indicator_vbt/" title="변동성 돌파 트렌드 전략">변동성 돌파 트렌드 전략</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/indicator_haus/" title="하이킨아시 업스윙 전략">하이킨아시 업스윙 전략</a></li>
+  
+
+  
+  
+  
+  
+  
+    
+    <li><a class="" href="/posts/strategies/strategy_grid/" title="그리드 현물매매 전략">그리드 현물매매 전략</a></li>
+  
+
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li>
+      <i class="fas fa-minus-circle"></i><a class="active" href="/posts/strategies/community/">사용자 전략 공유</a>
+      
+      <ul class="active">
+        
+  
+  
+  
+  
+    
+    
+  
+  
+    
+    <li><a class="active" href="/posts/strategies/community/indicator_torres/" title="토레스 전략">토레스 전략</a></li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+      </ul>
+    </li>
+  
+
+
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+      
+      
+<section class="content-section" id="content-section">
+  <div class="content">
+    <div class="container p-0 read-area">
+      
+      <div class="hero-area col-sm-12" id="hero-area" style='background-image: url(https://tvextbot.github.io/posts/strategies/community/indicator_torres/images/hero.png);'>
+      </div>
+
+      
+      <div class="page-content">
+        <div class="author-profile ml-auto align-self-lg-center">
+          <img class="rounded-circle" src='/images/main-logo_hu7962c8f4117a70956be5db6c3f05e9b5_22536_120x120_fit_box_3.png' alt="Author Image">
+          <h5 class="author-name">TVExtBot</h5>
+          <p>2023년 1월 8일 일요일</p>
+        </div>
+
+        <div class="title">
+          <h1>토레스 전략</h1>
+        </div>
+        
+        <div class="post-content" id="post-content">
+          <p><span class="text-primary"><strong>토레스 전략</strong></span>은 TVExtBot 사용자이신 Torres님이 제공하는 트레이딩뷰 초대전용 전략으로 선물/현물 코인의 추세와 역추세 그리고 횡보에 강한 전략입니다.</p>
+<div id="alert" class="alert alert-danger">
+    <h5 class="alert-heading"><i class="fa fa-comment"></i> 중요사항</h5>
+    <p>
+        <ul>
+            <li>토레스 전략은 초대전용 전략으로 Torres님이 제공하는 레퍼럴로 가입하시는 분들에 한해서는 무료로 사용가능하다고 합니다.</li>
+            <li>지표사용 권한 요청은 Torres님의 <a class="text-default" href="https://discord.gg/4kHc8pSg" target="_blank">Discord 채널 <i class="fas fa-external-link-square-alt"></i></a> 또는 <a class="text-default" href="https://open.kakao.com/o/sH9NYDXe" target="_blank">카톡 오픈방 <i class="fas fa-external-link-square-alt"></i></a>으로 문의하여 주세요.</li>
+            <li>지표 사용에 의해서 발생한 매매손실에 대해서는 일체 책임을 지지 않으니 유의하여 주세요.</li>
+        </ul>
+    </p>
+</div>
+<h3 id="설명">설명</h3>
+<p>토레스 전략은 트레이딩뷰 초대전용 전략으로 선물/현물 코인의 추세와 역추세 그리고 횡보에 강한 전략입니다.<br>
+전략 모드는 3 가지가 있으며, 각각을 혼합하여 스캘핑부터 스윙까지 지원가능한 전략입니다.<br>
+추천하는 코인은 전 대상 코인에서 초봉부터 시간봉까지 다양한 전략을 구사할 수 있습니다.<br>
+다양한 웹훅서비스를 통한 자동매매를 위해서 주문메세지 입력을 지원하며, 분할진입모드 또한 지원하고 있습니다.</p>
+<h3 id="셋팅방법">셋팅방법</h3>
+<p><span class="text-primary"><i class="fab fa-youtube"></i> 본 영상은 토레스 전략을 이용하시는 분들을 위해 제작된 세팅법 소개 영상입니다.</span>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/atuom5nkiI8" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<h3 id="주문메시지-작성">주문메시지 작성</h3>
+<p><span class="text-primary"><i class="fab fa-youtube"></i> 본 영상은 토레스 전략의 봇 주문메시지 작성방법 소개 영상입니다.</span>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/9OyVpbfcZ-Q" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+</p>
+<p><i class="fas fa-hand-point-right"></i> 전략의 세팅방법에 대한 노하우 및 사용자간 토론을 Torres님의 <a class="text-default" href="https://discord.gg/4kHc8pSg" target="_blank">Discord 채널 <i class="fas fa-external-link-square-alt"></i></a> 또는 <a class="text-default" href="https://open.kakao.com/o/sH9NYDXe" target="_blank">카톡 오픈방 <i class="fas fa-external-link-square-alt"></i></a> 에서 지원하고 있으니 관심있으신 분들은 연락 주세요.</p>
+        </div>
+
+        
+        <div class="row pl-3 pr-3">
+        
+        <div class="col-md-6 share-buttons">
+        
+          </div>
+
+        
+        
+        </div>
+
+
+
+      
+      <hr />
+        
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+    
+    
+  
+  
+
+
+<div class="row next-prev-navigator">
+  
+    <div class="col-md-6 previous-article">
+      <a href="/posts/strategies/strategy_grid/" title="그리드 현물매매 전략" class="btn btn-outline-info">
+        <div><i class="fas fa-chevron-circle-left"></i> 이전</div>
+        <div class="next-prev-text">그리드 현물매매 전략</div>
+      </a>
+    </div>
+  
+  
+</div>
+
+      <hr />
+
+      
+      
+      
+      
+
+      </div>
+    </div>
+  </div>
+  
+  <a id="scroll-to-top" class="btn"><i class="fas fa-chevron-circle-up"></i></a>
+  
+</section>
+
+
+      
+      
+  <section class="toc-section" id="toc-section">
+    
+    <div class="toc-holder">
+      <h5 class="text-center pl-3">목차</h5>
+      <hr>
+      <div class="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#설명">설명</a></li>
+        <li><a href="#셋팅방법">셋팅방법</a></li>
+        <li><a href="#주문메시지-작성">주문메시지 작성</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+      </div>
+    </div>
+    
+  </section>
+
+    </div>
+
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+      
+  
+
+
+
+  
+  
+    
+  
+
+  
+  
+    
+  
+
+  
+  
+
+  
+  
+    
+    
+      
+    
+  
+
+
+  
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+
+  
+  
+  
+
+  <footer id="footer" class="container-fluid text-center align-content-center footer pb-2">
+    <div class="container pt-5">
+      <div class="row text-left">
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>바로가기</h5>
+          
+          <ul>
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tvextbot.github.io#about">소개</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tvextbot.github.io#features">특징</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tvextbot.github.io#price">가격</a>
+                </li>
+              
+              
+                
+                
+                  
+                
+                <li class="nav-item">
+                  <a class="smooth-scroll" href="https://tvextbot.github.io#video">동영상</a>
+                </li>
+              
+            
+              
+            
+            <li class="nav-item">
+              <a class="smooth-scroll" href="/posts">매뉴얼</a>
+            </li>
+            <li class="nav-item">
+              <a class="smooth-scroll" href="/posts/referral">거래소 수수료 할인</a>
+            </li>
+          </ul>
+          
+        </div>
+        
+        
+        <div class="col-md-4 col-sm-12">
+          <h5>문의</h5>
+          <ul>
+            
+              
+                <li><a href=mailto:tvextbot@gmail.com target="_blank" rel="noopener">
+                  <span><i class="fas fa-envelope"></i></span> <span>tvextbot@gmail.com</span>
+                </a></li>
+              
+            
+              
+                <li><a href=https://t.me/bkson55 target="_blank" rel="noopener">
+                  <span><i class="fab fa-telegram"></i></span> <span>bkson55</span>
+                </a></li>
+              
+            
+          </ul>
+          <h5>공지채널</h5>
+          <ul>
+            <li>
+              <a href="https://t.me/tvextbot" target="_blank" rel="noopener">
+                <span><i class="fab fa-telegram"></i>　tvextbot</span>
+              </a>
+            </li>
+          </ul>          
+        </div>
+        
+        
+        
+        
+        
+          
+          <div class="col-md-4 col-sm-12">
+            <p>구글크롬 확장프로그램 다운로드</p>
+            <a class="btn btn-info" role="button" aria-pressed="true" href="https://chrome.google.com/webstore/detail/tvextbot/ocbdbfgioaohinjejhibklaoikhlodne" target="_blank"><i class="fab fa-chrome"></i> 크롬 웹스토어로 바로가기</a>
+            <p class="card-text mt-2"><small class="text-muted"><i class="fas fa-info-circle"></i> 크롬확장프로그램은 크롬브라우저에서만 사용가능합니다.</small></p>
+          </div>
+        
+      </div>
+    </div>
+    
+    
+    <hr />
+    <div class="container">
+      <div class="row text-left">
+        <div class="col-md-4">
+          
+        </div>
+        <div class="col-md-4 text-center">© 2019 Copyright.</div>
+        <div class="col-md-4 text-right small">
+          <a href="https://sites.google.com/view/terms-and-conditions-tvextbot" target="_blank" rel="noopener">Terms and Conditions</a>&nbsp;|&nbsp;
+          <a href="https://sites.google.com/view/tvextbot-privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+        </div>
+        
+      </div>
+    </div>
+    
+  </footer>
+
+
+    <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="/js/popper.min.js"></script>
+<script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="/js/navbar.js"></script>
+<script type="text/javascript" src="/js/plyr.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
+
+<script type="text/javascript" defer src="/js/katex.min.js"></script>
+<script type="text/javascript" defer src="/js/auto-render.min.js" onload="renderMathInElement(document.body);"></script>
+
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fitvids/1.2.0/jquery.fitvids.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.slider').bxSlider({
+            auto: true,
+            pause: 5000
+        });
+    });
+    $(document).on("change", "select[name=selStandardPeriod]",function(e) {
+        var period = $(this).val();
+        if (period === '1year') {
+            $('#standardPrice').text('24만원');
+        } else if (period === '6month') {
+            $('#standardPrice').text('16만원');
+        }    
+    });  
+    $(document).on("change", "select[name=selExpertPeriod]",function(e) {
+        var period = $(this).val();
+        if (period === '1year') {
+            $('#expertPrice').text('42만원');
+        } else if (period === '6month') {
+            $('#expertPrice').text('28만원');
+        }    
+    });  
+
+    $('.slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        accessibility: true,
+        arrows: true,
+        swipe: true,
+        swipeToSlide: true
+    });
+
+    $('.slide').bind('touchstart', function() {
+        return true;
+    });
+</script>
+
+    
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js"></script>
+<script src="/js/single.js"></script>
+<script>
+  hljs.initHighlightingOnLoad();
+</script>
+
+
+  </body>
+</html>

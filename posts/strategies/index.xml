@@ -5,7 +5,16 @@
     <link>https://tvextbot.github.io/posts/strategies/</link>
     <description>Recent content in 전략 on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 27 May 2022 08:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/posts/strategies/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Sun, 08 Jan 2023 10:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/posts/strategies/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>토레스 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/community/indicator_torres/</link>
+      <pubDate>Sun, 08 Jan 2023 10:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/community/indicator_torres/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;토레스 전략&lt;/strong&gt;&lt;/span&gt;은 TVExtBot 사용자이신 Torres님이 제공하는 트레이딩뷰 초대전용 전략으로 선물/현물 코인의 추세와 역추세 그리고 횡보에 강한 전략입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>그리드 현물매매 전략</title>
       <link>https://tvextbot.github.io/posts/strategies/strategy_grid/</link>
       <pubDate>Fri, 27 May 2022 08:06:25 +0600</pubDate>
