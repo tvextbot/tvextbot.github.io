@@ -25,6 +25,11 @@ var isMobile = false, isTablet = false, isLaptop = false;
     if (window.location.href.indexOf('/post/') >= 0) {
       var url = window.location.href.replace('post/','posts/');
       url = url.replace('extension_update/', 'update_chrome/');
+      url = url.replace('event/', 'referral/');
+      url = url.replace('event1/', 'referral/');
+      url = url.replace('event3/', 'referral/');
+      url = url.replace('event4/', 'referral/');
+      url = url.replace('bitget_api/', 'api/');
       url = url.replace('indicators/', 'strategies/');
       url = url.replace('indicator_bo/', 'strategies/indicator_bo/');
       url = url.replace('indicator_haus/', 'strategies/indicator_haus/');
