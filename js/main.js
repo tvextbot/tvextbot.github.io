@@ -21,7 +21,6 @@ var isMobile = false, isTablet = false, isLaptop = false;
     }
     detectDevice();
 
-    alert('test');
     // ================= Smooth Scroll ===================
     function addSmoothScroll() {
       // ref: https://css-tricks.com/snippets/jquery/smooth-scrolling/
