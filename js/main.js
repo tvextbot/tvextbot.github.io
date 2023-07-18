@@ -25,6 +25,7 @@ var isMobile = false, isTablet = false, isLaptop = false;
     if (window.location.href.indexOf('/post/') >= 0) {
       var url = window.location.href.replace('post/','posts/');
       url = url.replace('extension_update/', 'update_chrome/');
+      url = url.replace('indicators/', 'strategies/');
       url = url.replace('indicator_bo/', 'strategies/indicator_bo/');
       url = url.replace('indicator_haus/', 'strategies/indicator_haus/');
       url = url.replace('indicator_vbi/', 'strategies/indicator_vbi/');
