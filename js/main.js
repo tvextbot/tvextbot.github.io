@@ -30,6 +30,7 @@ var isMobile = false, isTablet = false, isLaptop = false;
       url = url.replace('indicator_vbi_plus/', 'strategies/indicator_vbi_plus/');
       url = url.replace('indicator_vbt/', 'strategies/indicator_vbt/');
       url = url.replace('strategy_alert/', 'strategies/strategy_alert/');
+      url = url.replace('basis/', 'strategies/pinescript/');
       window.location.href = url;
     }
     // ================= Smooth Scroll ===================
