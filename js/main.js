@@ -21,6 +21,11 @@ var isMobile = false, isTablet = false, isLaptop = false;
     }
     detectDevice();
 
+    // 기존페이지에서 새로운 페이지 이동
+    if (window.location.href.indexOf('/post/') >= 0) {
+      var url = window.location.href.replace('post/','posts/');
+      window.location.href = url;
+    }
     // ================= Smooth Scroll ===================
     function addSmoothScroll() {
       // ref: https://css-tricks.com/snippets/jquery/smooth-scrolling/
