@@ -24,6 +24,12 @@ var isMobile = false, isTablet = false, isLaptop = false;
     // 기존페이지에서 새로운 페이지 이동
     if (window.location.href.indexOf('/post/') >= 0) {
       var url = window.location.href.replace('post/','posts/');
+      url = url.replace('indicator_bo/', 'strategies/indicator_bo/');
+      url = url.replace('indicator_haus/', 'strategies/indicator_haus/');
+      url = url.replace('indicator_vbi/', 'strategies/indicator_vbi/');
+      url = url.replace('indicator_vbi_plus/', 'strategies/indicator_vbi_plus/');
+      url = url.replace('indicator_vbt/', 'strategies/indicator_vbt/');
+      url = url.replace('strategy_alert/', 'strategies/strategy_alert/');
       window.location.href = url;
     }
     // ================= Smooth Scroll ===================
