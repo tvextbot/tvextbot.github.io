@@ -180,17 +180,6 @@
     </item>
     
     <item>
-      <title>시작하기</title>
-      <link>https://tvextbot.github.io/posts/first/</link>
-      <pubDate>Sat, 05 Mar 2022 08:06:25 +0600</pubDate>
-      
-      <guid>https://tvextbot.github.io/posts/first/</guid>
-      <description>&lt;blockquote&gt;
-&lt;p&gt;처음 사용하시는 분들을 위한 사용자 가이드입니다.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
-    </item>
-    
-    <item>
       <title>웹훅URL에 의한 자동매매</title>
       <link>https://tvextbot.github.io/posts/webhook/</link>
       <pubDate>Sat, 05 Mar 2022 08:06:25 +0600</pubDate>
@@ -209,6 +198,17 @@
       <guid>https://tvextbot.github.io/posts/authguide/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;인증키를 구매하기 위한 송금방법과 프로그램내 인증키 등록방법에 대해서 설명합니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>코인자동매매 시작하기</title>
+      <link>https://tvextbot.github.io/posts/first/</link>
+      <pubDate>Sat, 05 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/first/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;처음 사용하시는 분들을 위한 사용자 가이드입니다.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
