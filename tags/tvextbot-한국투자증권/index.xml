@@ -5,7 +5,16 @@
     <link>https://tvextbot.github.io/tags/tvextbot-%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C/</link>
     <description>Recent content in TVExtBot 한국투자증권 on TVExtBot</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Mar 2022 10:06:25 +0500</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/tvextbot-%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+    <lastBuildDate>Mon, 07 Mar 2022 14:06:25 +0600</lastBuildDate><atom:link href="https://tvextbot.github.io/tags/tvextbot-%ED%95%9C%EA%B5%AD%ED%88%AC%EC%9E%90%EC%A6%9D%EA%B6%8C/index.xml" rel="self" type="application/rss+xml" /><item>
+      <title>변동성 돌파 트렌드 전략</title>
+      <link>https://tvextbot.github.io/posts/strategies/indicator_vbt/</link>
+      <pubDate>Mon, 07 Mar 2022 14:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/strategies/indicator_vbt/</guid>
+      <description>&lt;p&gt;&lt;span class=&#34;text-primary&#34;&gt;&lt;strong&gt;변동성 돌파 트렌드 전략&lt;/strong&gt;&lt;/span&gt;은 변동성 돌파 기본 전략을 1시간봉과 2시간봉에 최적화하여 롱과 숏 양방향으로 매매가능하도록 수정한 단기 추세 전략입니다.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>거래소 API 발급 방법</title>
       <link>https://tvextbot.github.io/posts/api/</link>
       <pubDate>Sat, 05 Mar 2022 10:06:25 +0500</pubDate>
@@ -13,6 +22,17 @@
       <guid>https://tvextbot.github.io/posts/api/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;각 거래소의 API 발급 방법에 대해서 설명합니다.&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>웹훅URL에 의한 자동매매</title>
+      <link>https://tvextbot.github.io/posts/webhook/</link>
+      <pubDate>Sat, 05 Mar 2022 08:06:25 +0600</pubDate>
+      
+      <guid>https://tvextbot.github.io/posts/webhook/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;웹훅URL에 의한 자동매매란 컴퓨터를 껀 상태에서도 트레이딩뷰와 연동하여 자동매매가 가능한 새로운 기능입니다.&lt;/p&gt;
 &lt;/blockquote&gt;</description>
     </item>
     
