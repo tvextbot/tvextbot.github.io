@@ -556,7 +556,7 @@ if (!doNotTrack) {
               <h5 class="card-title text-primary text-uppercase text-center">STANDARD</h5>
               <div class="row d-flex align-items-end">
                 <div class="col-md-12 text-center">
-                  <span id="standardPrice" class="text-center" style="font-size: 2rem;margin: 0;">24만원</span>/
+                  <span id="standardPrice" class="text-center" style="font-size: 2rem;margin: 0;">26만원</span>/
                   <select name="selStandardPeriod" class="border-default text-default">
                     <option value="1year">1년</option>
                     <option value="6month">6개월</option>
@@ -879,9 +879,9 @@ if (!doNotTrack) {
     $(document).on("change", "select[name=selStandardPeriod]",function(e) {
         var period = $(this).val();
         if (period === '1year') {
-            $('#standardPrice').text('24만원');
+            $('#standardPrice').text('26만원');
         } else if (period === '6month') {
-            $('#standardPrice').text('16만원');
+            $('#standardPrice').text('18만원');
         }    
     });  
     $(document).on("change", "select[name=selExpertPeriod]",function(e) {
