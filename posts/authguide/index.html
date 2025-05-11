@@ -447,7 +447,7 @@ if (!doNotTrack) {
 
 <i class="fas fa-hand-point-right"></i> 여기서는 USDT를 선택하고 네크워크는 수수료가 싼 BSC(BEP-20)를 선택하겠습니다.</p>
 <blockquote>
-<p><span class="text-danger">※ 송금 가능한 코인은 BTC, BCH, ETH, LTC, DOGE, BNB, MATIC, TRX, AVAX, SHIB, SOL, USDT, USDC 입니다.</span></p>
+<p><span class="text-danger">※ 송금 가능한 코인은 BCH, LTC, DOGE, TRX, SOL, USDT, USDC 입니다.</span></p>
 </blockquote>
 <p>6.입금할 금액과 주소가 나타납니다.
 <figure><img src="images/num6.png"/>
@@ -845,9 +845,11 @@ if (!doNotTrack) {
     $(document).on("change", "select[name=selExpertPeriod]",function(e) {
         var period = $(this).val();
         if (period === '1year') {
-            $('#expertPrice').text('42만원');
+            $('#expertPrice').text('32만원');
+            $('#expertDelPrice').text('42');
         } else if (period === '6month') {
-            $('#expertPrice').text('28만원');
+            $('#expertPrice').text('23만원');
+            $('#expertDelPrice').text('28');
         }    
     });  
 

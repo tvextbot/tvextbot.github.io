@@ -581,12 +581,16 @@ if (!doNotTrack) {
         <div class="col-sm-4">
           <div class="card">
             <div class="card-body">
-              
+              <div class="ribbon-wrapper">
+                <div class="ribbon bg-danger">
+                  <span class="text-white">SALE</span>
+                </div>
+              </div> 
               <h5 class="card-title text-info text-uppercase text-center">EXPERT</h5>
               <div class="row d-flex align-items-end">
                 <div class="col-md-12 text-center">
-                  
-                  <span id="expertPrice" class="text-center" style="font-size: 2rem;margin: 0;">42만원</span>/
+                  <span class="text-danger font-weight-bold" style="font-size: 1.5rem;margin: 0;"><del id="expertDelPrice">42</del></span>
+                  <span id="expertPrice" class="text-center" style="font-size: 2rem;margin: 0;">32만원</span>/
                   <select name="selExpertPeriod" class="border-default text-default">
                     <option value="1year">1년</option>
                     <option value="6month">6개월</option>
@@ -887,9 +891,11 @@ if (!doNotTrack) {
     $(document).on("change", "select[name=selExpertPeriod]",function(e) {
         var period = $(this).val();
         if (period === '1year') {
-            $('#expertPrice').text('42만원');
+            $('#expertPrice').text('32만원');
+            $('#expertDelPrice').text('42');
         } else if (period === '6month') {
-            $('#expertPrice').text('28만원');
+            $('#expertPrice').text('23만원');
+            $('#expertDelPrice').text('28');
         }    
     });  
 

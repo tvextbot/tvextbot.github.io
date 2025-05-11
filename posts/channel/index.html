@@ -851,9 +851,11 @@ if (!doNotTrack) {
     $(document).on("change", "select[name=selExpertPeriod]",function(e) {
         var period = $(this).val();
         if (period === '1year') {
-            $('#expertPrice').text('42만원');
+            $('#expertPrice').text('32만원');
+            $('#expertDelPrice').text('42');
         } else if (period === '6month') {
-            $('#expertPrice').text('28만원');
+            $('#expertPrice').text('23만원');
+            $('#expertDelPrice').text('28');
         }    
     });  
 
