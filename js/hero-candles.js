@@ -201,9 +201,7 @@
     series.forEach(function (c) { lo = Math.min(lo, c.l); hi = Math.max(hi, c.h); });
     var pad = (hi - lo) * 0.25 + 1;
     lo -= pad; hi += pad;
-    // price area; on phones it sits below the logo/text block so they do not overlap
-    var narrow = W < 700;
-    var top = narrow ? H * 0.60 : H * 0.12, bottom = narrow ? H * 0.80 : H * 0.74;
+    var top = H * 0.12, bottom = H * 0.74;   // price area; volume bars sit below
     function y(v) { return bottom - (v - lo) / (hi - lo) * (bottom - top); }
     function x(k) { return W - (series.length - k) * step - offset + step; }
 
@@ -223,7 +221,7 @@
     }
 
     // volume bars along the bottom
-    var volTop = narrow ? H * 0.86 : H * 0.80, volBottom = H;
+    var volTop = H * 0.80, volBottom = H;
     var vmax = 0; series.forEach(function (c) { vmax = Math.max(vmax, c.v || 0); });
     for (var q = 0; q < series.length; q++) {
       var vc = series[q], vx = x(q), vh = ((vc.v || 0) / (vmax || 1)) * (volBottom - volTop);
