@@ -21,7 +21,8 @@
   var lastPrice = 100, live = null, liveTicks = 0;
   var FAST = 6, SLOW = 18;     // moving averages whose crossovers trigger the demo trades
   var pos = null;              // open demo position {side, entry, i, market}
-  var packets = [], particles = null;            // "webhook" dots flying from a signal to the order toast
+  var packets = [], particles = null;
+  var bgLayer = null, vignetteLayer = null, auroraLayer = null, auroraAt = -1e9;            // "webhook" dots flying from a signal to the order toast
   var booting = true;          // no toasts while pre-filling history
   var lastTrade = 0;           // time of the last demo trade (ms)
   var MIN_GAP = 4000, MAX_GAP = 8000, FIRST_TRADE = 1500;
@@ -83,6 +84,14 @@
 
   function rand(a, b) { return a + Math.random() * (b - a); }
 
+  // offscreen layer drawn in CSS-pixel coordinates at `scale` x the canvas resolution
+  function layer(paint, scale) {
+    var k = (scale || 1) * dpr, c = document.createElement('canvas');
+    c.width = Math.max(1, Math.round(W * k)); c.height = Math.max(1, Math.round(H * k));
+    var cx = c.getContext('2d'); cx.setTransform(k, 0, 0, k, 0, 0); paint(cx);
+    return c;
+  }
+
   function nextCandle(prev) {
     var open = prev;
     var drift = Math.sin(candles.length / 23) * 0.35 + Math.sin(candles.length / 7) * 0.15;
@@ -102,11 +111,15 @@
   function resize() {
     var r = canvas.getBoundingClientRect();
     dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // keep the backing store under ~3.5M pixels (Safari slows down a lot above that)
+    var maxPx = 3.5e6, area = Math.max(1, r.width * r.height);
+    if (area * dpr * dpr > maxPx) dpr = Math.max(1, Math.sqrt(maxPx / area));
     W = Math.max(1, Math.round(r.width));
     H = Math.max(1, Math.round(r.height));
     canvas.width = W * dpr;
     canvas.height = H * dpr;
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    bgLayer = null; vignetteLayer = null;
     candleW = W < 600 ? 9 : W < 1200 ? 13 : 17;
     gap = Math.round(candleW * 0.45);
     step = candleW + gap;
@@ -135,21 +148,32 @@
   }
 
   function draw(now) {
-    var g = ctx.createLinearGradient(0, 0, 0, H);
-    g.addColorStop(0, COLORS.bgTop); g.addColorStop(1, COLORS.bgBottom);
-    ctx.fillStyle = g; ctx.fillRect(0, 0, W, H);
+    if (!bgLayer) {
+      bgLayer = layer(function (c) {
+        var g = c.createLinearGradient(0, 0, 0, H);
+        g.addColorStop(0, COLORS.bgTop); g.addColorStop(1, COLORS.bgBottom);
+        c.fillStyle = g; c.fillRect(0, 0, W, H);
+      });
+    }
+    ctx.drawImage(bgLayer, 0, 0, W, H);
 
-    // aurora: soft colour glows drifting slowly
+    // aurora: soft colour glows drifting slowly (low-res layer, refreshed ~8x/s)
     var tt = now / 1000;
-    [
+    if (!auroraLayer || now - auroraAt > 120) {
+      auroraAt = now;
+      auroraLayer = layer(function (c) {
+        [
       { x: 0.18 + Math.sin(tt / 9) * 0.08, y: 0.22 + Math.cos(tt / 11) * 0.06, r: 0.55, c: '34, 211, 238', a: 0.22 },
-      { x: 0.82 + Math.cos(tt / 10) * 0.07, y: 0.30 + Math.sin(tt / 8) * 0.07, r: 0.50, c: '168, 85, 247', a: 0.24 },
-      { x: 0.55 + Math.sin(tt / 13) * 0.10, y: 0.85 + Math.cos(tt / 12) * 0.05, r: 0.60, c: '59, 130, 246', a: 0.18 }
-    ].forEach(function (b) {
-      var R = Math.max(W, H) * b.r, gl = ctx.createRadialGradient(b.x * W, b.y * H, 0, b.x * W, b.y * H, R);
-      gl.addColorStop(0, 'rgba(' + b.c + ',' + b.a + ')'); gl.addColorStop(1, 'rgba(' + b.c + ',0)');
-      ctx.fillStyle = gl; ctx.fillRect(0, 0, W, H);
-    });
+          { x: 0.82 + Math.cos(tt / 10) * 0.07, y: 0.30 + Math.sin(tt / 8) * 0.07, r: 0.50, c: '168, 85, 247', a: 0.24 },
+          { x: 0.55 + Math.sin(tt / 13) * 0.10, y: 0.85 + Math.cos(tt / 12) * 0.05, r: 0.60, c: '59, 130, 246', a: 0.18 }
+        ].forEach(function (b) {
+          var R = Math.max(W, H) * b.r, gl = c.createRadialGradient(b.x * W, b.y * H, 0, b.x * W, b.y * H, R);
+          gl.addColorStop(0, 'rgba(' + b.c + ',' + b.a + ')'); gl.addColorStop(1, 'rgba(' + b.c + ',0)');
+          c.fillStyle = gl; c.fillRect(0, 0, W, H);
+        });
+      }, 0.25);
+    }
+    ctx.drawImage(auroraLayer, 0, 0, W, H);
 
     // floating particles
     if (!particles) {
@@ -216,8 +240,10 @@
         var px = x(k) + candleW / 2, py = y(m);
         if (!started) { ctx.moveTo(px, py); started = true; } else ctx.lineTo(px, py);
       }
-      ctx.strokeStyle = color; ctx.lineWidth = width;
-      ctx.shadowColor = color; ctx.shadowBlur = 8; ctx.stroke(); ctx.shadowBlur = 0;
+      ctx.strokeStyle = color;
+      var a0 = ctx.globalAlpha;
+      ctx.globalAlpha = a0 * 0.18; ctx.lineWidth = width * 3.5; ctx.stroke();
+      ctx.globalAlpha = a0; ctx.lineWidth = width; ctx.stroke();
     }
 
     // volume bars along the bottom
@@ -239,7 +265,7 @@
       ctx.strokeStyle = col; ctx.fillStyle = col; ctx.lineWidth = 1.5;
       ctx.beginPath(); ctx.moveTo(cx + candleW / 2, y(c.h)); ctx.lineTo(cx + candleW / 2, y(c.l)); ctx.stroke();
       var by = y(Math.max(c.o, c.c)), bh = Math.max(1, Math.abs(y(c.o) - y(c.c)));
-      ctx.shadowColor = col; ctx.shadowBlur = k === series.length - 1 ? 16 : 5;
+      if (k === series.length - 1) { ctx.shadowColor = col; ctx.shadowBlur = 16; }
       ctx.fillRect(cx, by, candleW, bh);
       ctx.shadowBlur = 0;
     }
@@ -301,9 +327,14 @@
     });
 
     // darken the centre so the logo and text stay readable
-    var v = ctx.createRadialGradient(W / 2, H * 0.45, 0, W / 2, H * 0.45, Math.max(W, H) * 0.6);
-    v.addColorStop(0, 'rgba(11,18,32,0.38)'); v.addColorStop(0.3, 'rgba(11,18,32,0.12)'); v.addColorStop(1, 'rgba(11,18,32,0)');
-    ctx.fillStyle = v; ctx.fillRect(0, 0, W, H);
+    if (!vignetteLayer) {
+      vignetteLayer = layer(function (c) {
+        var v = c.createRadialGradient(W / 2, H * 0.45, 0, W / 2, H * 0.45, Math.max(W, H) * 0.6);
+        v.addColorStop(0, 'rgba(11,18,32,0.38)'); v.addColorStop(0.3, 'rgba(11,18,32,0.12)'); v.addColorStop(1, 'rgba(11,18,32,0)');
+        c.fillStyle = v; c.fillRect(0, 0, W, H);
+      }, 0.5);
+    }
+    ctx.drawImage(vignetteLayer, 0, 0, W, H);
 
     // webhook dots: signal -> order toast
     var cr = canvas.getBoundingClientRect(), tr = toastBox.getBoundingClientRect();
